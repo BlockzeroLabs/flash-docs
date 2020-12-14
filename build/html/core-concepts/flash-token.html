@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Flash Token &mdash; Flash Protocol 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Flash Stake" href="flash-stake.html" />
+    <link rel="prev" title="FAQ" href="../getting-started/faq.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Flash Protocol
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/protocol-overview.html">Protocol Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Core Concepts</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Flash Token</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#flashminting">Flashminting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flash-stake.html">Flash Stake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flash-receiver.html">Flash Receiver</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Smart Contracts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/addresses.html">Addresses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/flash-protocol.html">Flash Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/gas-costs.html">Gas Cost</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/receiver.html">Building Flash Receiver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/security.html">Security</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/fetching-data.html">Fetching protocol data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/stake.html">Stake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/unstake.html">Unstake</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Flash Protocol</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Flash Token</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/core-concepts/flash-token.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="flash-token">
+<h1>Flash Token<a class="headerlink" href="#flash-token" title="Permalink to this headline">¶</a></h1>
+<p>Flash Token (<strong>$FLASH</strong>) is an Ethereum token that enables interacting with the Flash Protocol.</p>
+<p>FLASH contract address is: &lt;TODO: TOKEN_ADDRESS&gt;</p>
+<p>The Flash Token does not have a fixed supply. <strong>$FLASH</strong> is minted on every stake and it’s burned on every unstake (only if the staking period has not been elapsed).
+The process of minting can only be achieved using the Flash Protocol.</p>
+<p>The inflation rate of the token is corelated to the usage of Flash protocol, the <strong>FPY</strong> (Flash Percentage Yield) and the matching ratio.</p>
+<dl class="simple">
+<dt>The token follows the ERC20 standard with few extensions:</dt><dd><ul class="simple">
+<li><p>ERC-3009 - transfer with authorization, which enables gasless transactions</p></li>
+<li><p>flash mint - allows to flash mint (using similar concept to flash loans) an arbitrary amount of <strong>$FLASH</strong>, with the condition that the minted amount is burned before the end of the transaction.</p></li>
+<li><p>an exposed mint() and burn() functions which can be invoked only by the flash protocol</p></li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="flashminting">
+<h2>Flashminting<a class="headerlink" href="#flashminting" title="Permalink to this headline">¶</a></h2>
+<p>The flash mint implementation is the following:</p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="kt">function</span><span class="w"> </span><span class="nv">flashMint</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">value</span><span class="p">,</span><span class="w"> </span><span class="kt">bytes</span><span class="w"> </span><span class="nv">calldata</span><span class="w"> </span>data<span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span>flashSupply<span class="w"> </span><span class="o">=</span><span class="w"> </span>flashSupply<span class="p">.</span>add<span class="p">(</span>value<span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">require</span><span class="p">(</span>flashSupply<span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span>type<span class="p">(</span><span class="kt">uint112</span><span class="p">).</span>max<span class="p">,</span><span class="w"> </span><span class="s2">&quot;FlashToken:: SUPPLY_LIMIT_EXCEED&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span>balanceOf<span class="p">[</span><span class="k">msg.sender</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>balanceOf<span class="p">[</span><span class="k">msg.sender</span><span class="p">].</span>add<span class="p">(</span>value<span class="p">);</span><span class="w"></span>
+<span class="w">    </span>emit<span class="w"> </span>Transfer<span class="p">(</span><span class="kt">address</span><span class="p">(</span><span class="m m-Decimal">0</span><span class="p">),</span><span class="w"> </span><span class="k">msg.sender</span><span class="p">,</span><span class="w"> </span>value<span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span>IFlashMinter<span class="p">(</span><span class="k">msg.sender</span><span class="p">).</span>executeOnFlashMint<span class="p">(</span>data<span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">require</span><span class="p">(</span>balanceOf<span class="p">[</span><span class="k">msg.sender</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span>value<span class="p">,</span><span class="w"> </span><span class="s2">&quot;FlashToken:: TRANSFER_EXCEED_BALANCE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span>balanceOf<span class="p">[</span><span class="k">msg.sender</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>balanceOf<span class="p">[</span><span class="k">msg.sender</span><span class="p">].</span>sub<span class="p">(</span>value<span class="p">);</span><span class="w"></span>
+<span class="w">    </span>flashSupply<span class="w"> </span><span class="o">=</span><span class="w"> </span>flashSupply<span class="p">.</span>sub<span class="p">(</span>value<span class="p">);</span><span class="w"></span>
+<span class="w">    </span>emit<span class="w"> </span>Transfer<span class="p">(</span><span class="k">msg.sender</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="p">(</span><span class="m m-Decimal">0</span><span class="p">),</span><span class="w"> </span>value<span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In order to use the flashminting functionality you have to build a smart contract that implements the following interface:</p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="kt">function</span><span class="w"> </span><span class="nv">executeOnFlashMint</span><span class="p">(</span><span class="kt">bytes</span><span class="w"> </span><span class="nv">calldata</span><span class="w"> </span>data<span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>then the smart contract must make a call to:</p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="kt">function</span><span class="w"> </span><span class="nv">flashMint</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">value</span><span class="p">,</span><span class="w"> </span><span class="kt">bytes</span><span class="w"> </span><span class="nv">calldata</span><span class="w"> </span>data<span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="flash-stake.html" class="btn btn-neutral float-right" title="Flash Stake" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../getting-started/faq.html" class="btn btn-neutral float-left" title="FAQ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, XIO
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

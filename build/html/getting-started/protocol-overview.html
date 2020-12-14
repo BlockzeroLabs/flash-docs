@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Protocol Overview &mdash; Flash Protocol 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FAQ" href="faq.html" />
+    <link rel="prev" title="Flash Protocol" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Flash Protocol
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Protocol Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#glossary">Glossary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#automated-market-maker">Automated market maker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fpy">FPY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#erc20">ERC20</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pool">Pool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#liquidity-provider-lp">Liquidity provider / LP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#slippage">Slippage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flash-mint">Flash Mint</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Core Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core-concepts/flash-token.html">Flash Token</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core-concepts/flash-stake.html">Flash Stake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core-concepts/flash-receiver.html">Flash Receiver</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Smart Contracts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/addresses.html">Addresses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/flash-protocol.html">Flash Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/gas-costs.html">Gas Cost</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/receiver.html">Building Flash Receiver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/security.html">Security</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/fetching-data.html">Fetching protocol data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/stake.html">Stake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/unstake.html">Unstake</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Flash Protocol</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Protocol Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/protocol-overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="protocol-overview">
+<h1>Protocol Overview<a class="headerlink" href="#protocol-overview" title="Permalink to this headline">¶</a></h1>
+<p>Existing DeFi projects aim to provide annualized earnings for specific currencies using smart contracts.
+Usually once the user funds are successfully allocated in the smart contract, earnings are calculated every Ethereum block (i.e. every ~15 seconds).</p>
+<p>So, if the <strong>APY</strong> (Annualized Percentage Yield) is <strong>10%</strong> and a user stakes <strong>$100</strong>, after 1 year (if the APY was stable), he will be able to withdraw <strong>$110</strong>.</p>
+<p><strong>Flash</strong> is a permissionless protocol allowing everyone to stake <strong>$FLASH</strong> and earn instant upfront yield.</p>
+<p>Flash protocol enables users to stake tokens and earn the yield immediately.
+Using the same example as above, if the user stakes <strong>$100</strong> for 1 year, he will get <strong>$10</strong> instantly and have his <strong>$100</strong> locked for 1 year.</p>
+<p>Because of its permissionless nature, it will exist for as long as Ethereum does.</p>
+<p>The Flash Protocol is fueled by the <strong>$FLASH</strong> Token the same way Ethereum is fueled by <strong>ETH</strong>. To learn more about it read <a class="reference internal" href="../core-concepts/flash-token.html"><span class="doc">Flash Token</span></a></p>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/FLASH.png"><img alt="FLASH Architecture" class="align-center" src="../_images/FLASH.png" style="width: 360px;" /></a>
+<p>The Flash Protocol is built with numerous useful features:</p>
+<ul class="simple">
+<li><p>permissionless</p></li>
+<li><p>open source</p></li>
+<li><p>stake <strong>$FLASH</strong> and redirect the yield to EOA or a contract</p></li>
+<li><p>unstake <strong>$FLASH</strong> after the expire period is over</p></li>
+<li><p>unstake <strong>$FLASH</strong> before the expire period is over, but burn percentage of the staked amount based on the remaining time</p></li>
+<li><p>dynamic FPY (Flash Percentage Yield) calculated with the formula:</p></li>
+</ul>
+<img alt="FPY Formula" class="align-center" src="../_images/FPY.png" />
+<ul class="simple">
+<li><p>dynamic instant yield calculated with the formula:</p></li>
+</ul>
+<img alt="FPY Formula" class="align-center" src="../_images/yield.png" />
+</div>
+<div class="section" id="glossary">
+<h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="automated-market-maker">
+<h3>Automated market maker<a class="headerlink" href="#automated-market-maker" title="Permalink to this headline">¶</a></h3>
+<p>An automated market maker is a smart contract on Ethereum that hold on-chain liquidity reserves. Users can trade against these reserves at prices set by an automated market making formula.</p>
+</div>
+<div class="section" id="fpy">
+<h3>FPY<a class="headerlink" href="#fpy" title="Permalink to this headline">¶</a></h3>
+<p>Flash Percentage Yield - the percentage used to calculate the yield reward.</p>
+</div>
+<div class="section" id="erc20">
+<h3>ERC20<a class="headerlink" href="#erc20" title="Permalink to this headline">¶</a></h3>
+<p>ERC20 tokens are fungibile tokens on Ethereum. Uniswap supports all standard ERC20 implementations.</p>
+</div>
+<div class="section" id="pool">
+<h3>Pool<a class="headerlink" href="#pool" title="Permalink to this headline">¶</a></h3>
+<p>Liquidity within a pair is pooled across all liquidity providers.</p>
+</div>
+<div class="section" id="liquidity-provider-lp">
+<h3>Liquidity provider / LP<a class="headerlink" href="#liquidity-provider-lp" title="Permalink to this headline">¶</a></h3>
+<p>A liquidity provider is someone who deposits an equivalent value of ERC20 tokens into the liquidity pool within a pair. Liquidity providers take on price risk and are compensated with fees.</p>
+</div>
+<div class="section" id="slippage">
+<h3>Slippage<a class="headerlink" href="#slippage" title="Permalink to this headline">¶</a></h3>
+<p>The amount the price moves in a trading pair between when a transaction is submitted and when it is executed.</p>
+</div>
+<div class="section" id="flash-mint">
+<h3>Flash Mint<a class="headerlink" href="#flash-mint" title="Permalink to this headline">¶</a></h3>
+<p>The ability for anyone to mint an arbitrary number of new tokens into their account, as long as they also burn the same number of tokens from their account before the end of the same transaction.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="faq.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Flash Protocol" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, XIO
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
