@@ -10,6 +10,8 @@ Welcome! The pages that follow contain comprehensive documentation of
 the **Flash Protocol**. If you are new to **Flash**, you might want to
 check out the :doc:`./getting-started/protocol-overview` or the :doc:`./getting-started/faq`
 
+[auto deployment test]
+
 Getting Started
 ---------------
 
