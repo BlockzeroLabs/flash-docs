@@ -20,7 +20,7 @@ Is Flash Protocol fully permissionless?
 Yes. The Flash Protocol Pools/Applications cannot be censored or whitelisted. 
 Users cannot be censored or whitelisted. 
 The XIO Team does not have the power to halt or edit the smart contracts in any way after they’ve been deployed. 
-The contracts are not upgradeable, and there is "backdoor" present in the code. 
+The contracts are not upgradeable, and there is no "backdoor" present in the code. 
 Of course, XIO has no control over the contracts of ERC20 tokens placed in the Flash Protocol pools/applications.
 If a centralized token (e.g., USDC) were to blacklist an address or freeze all transfers, that would affect all USDC tokens everywhere, including those in the Flash Protocol.
 

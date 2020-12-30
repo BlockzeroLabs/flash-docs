@@ -3,7 +3,7 @@ Flash Token
 
 Flash Token (**$FLASH**) is an Ethereum token that enables interacting with the Flash Protocol. 
 
-FLASH contract address is: <TODO: TOKEN_ADDRESS>
+FLASH contract address is: **0xb4467e8d621105312a914f1d42f10770c0ffe3c8**
 
 The Flash Token does not have a fixed supply. **$FLASH** is minted on every stake and it's burned on every unstake (only if the staking period has not been elapsed).
 The process of minting can only be achieved using the Flash Protocol.
