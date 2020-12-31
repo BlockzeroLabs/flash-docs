@@ -24,17 +24,17 @@ The contracts are not upgradeable, and there is no "backdoor" present in the cod
 Of course, XIO has no control over the contracts of ERC20 tokens placed in the Flash Protocol pools/applications.
 If a centralized token (e.g., USDC) were to blacklist an address or freeze all transfers, that would affect all USDC tokens everywhere, including those in the Flash Protocol.
 
-Does Flash Protocol charges any fees at the protocol layer?
+Does Flash Protocol charge any fees at the protocol layer?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The users of the Flash Protocol will not be charged any fees. Instead, a percentage of the upfront yield will be "matched" and sent to a predefined Ethereum wallet. 
 The match ratio can be as low as 0% and as high as 20%. That ratio can be changed via a 3 days time-lock function, so users can be aware if a change in the ratio is about to happen.
 
 | **Example:** if the match ratio is 2% and the generated upfront yield is **100 $FLASH**. 
-| **100 $FLASH** will be send to the user and **2 $FLASH** will be generated for the XIO Foundation. The matched yiled will be used to support future developments of The Flash Protocol.
+| **100 $FLASH** will be send to the user and **2 $FLASH** will be generated for the XIO Foundation. The matched yield will be used to support future developments of The Flash Protocol.
 
 Is there a Flash Protocol token?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Yes, there is a token called $FLASH. The Flash Token does not have a fixed supply and the contract address is **<TODO: ENTER_AN_ADDRESS>**.
+Yes, there is a token called $FLASH. The Flash Token does not have a fixed supply and the contract address is **0xb4467e8d621105312a914f1d42f10770c0ffe3c8**.
 Users can use the $FLASH token in order to stake and earn instant upfront yield.
 
 **Miscellaneous**
