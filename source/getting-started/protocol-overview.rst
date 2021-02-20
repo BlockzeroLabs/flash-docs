@@ -82,7 +82,3 @@ A liquidity provider is someone who deposits an equivalent value of ERC20 tokens
 Slippage
 ~~~~~~~~
 The amount the price moves in a trading pair between when a transaction is submitted and when it is executed.
-
-Flash Mint
-~~~~~~~~~~
-The ability for anyone to mint an arbitrary number of new tokens into their account, as long as they also burn the same number of tokens from their account before the end of the same transaction.
