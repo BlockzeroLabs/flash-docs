@@ -24,7 +24,6 @@ components.
 
 - `Flash Protocol <https://github.com/XIO-Network/xio-flash-protocol>`_
 - `Flash Receiver <https://github.com/XIO-Network/xio-flashapp-contracts>`_
-- `Flash Frontend <https://github.com/XIO-Network>`_
 
 Contents
 ========
