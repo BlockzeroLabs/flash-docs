@@ -30,8 +30,21 @@ Contents
 
 .. toctree::
    :maxdepth: 3
-   :caption: Flashstake App
+   :caption: Flashstake
 
-   ./flashstake-app/create-flashstake.rst
-   ./flashstake-app/flashstake-dashboard.rst
-   ./flashstake-app/advanced-mode.rst
+   ./flashstake/create-flashstake.rst
+   ./flashstake/flashstake-dashboard.rst
+   ./flashstake/advanced-mode.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Flashback
+
+   ./flashback/create-flashback.rst
+   ./flashback/flashback-dashboard.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Flashburn
+
+   ./flashburn/flashburn.rst

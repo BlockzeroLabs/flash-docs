@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a Flashback &mdash; Flash Protocol 0.1.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dashboard" href="flashback-dashboard.html" />
+    <link rel="prev" title="Advanced mode" href="../flashstake/advanced-mode.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../contents.html" class="icon icon-home"> Flash Protocol
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Flashstake</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../flashstake/create-flashstake.html">Create a Flashstake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flashstake/flashstake-dashboard.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flashstake/advanced-mode.html">Advanced mode</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Flashback</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Create a Flashback</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#select-the-staking-amount">Select the staking amount</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#select-the-staking-duration">Select the staking duration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-the-flash-rewards">Check the FLASH rewards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approve-flash">Approve FLASH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-your-flashback">Start your Flashback</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flashback-dashboard.html">Dashboard</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Flashburn</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../flashburn/flashburn.html">Flashburn</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Flash Protocol</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Create a Flashback</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/flashback/create-flashback.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="create-a-flashback">
+<h1>Create a Flashback<a class="headerlink" href="#create-a-flashback" title="Permalink to this headline"></a></h1>
+<p>Flashbacks are a way to reward FLASH token holders,
+by allowing them to stake their FLASH to receive yield in FLASH. Unlike Flashstakes,
+Flashbacks are not about receiving upfront yield: the rewards are received only after the staking time is over.</p>
+<p>Flashbacking is as easy as Flashstaking. Just follow these five easy steps:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#select-the-staking-amount">Select the staking amount</a></li>
+<li><a class="reference internal" href="#select-the-staking-duration">Select the staking duration</a></li>
+<li><a class="reference internal" href="#check-the-rewards">Check the rewards</a></li>
+<li><a class="reference internal" href="#approve-tokens-to-the-smart-contract">Approve tokens to the smart contract</a></li>
+<li><a class="reference internal" href="#start-your-flashback">Start your Flashback</a></li>
+</ol>
+<p>In this page, we’ll go over each of these steps in detail.</p>
+<div class="section" id="select-the-staking-amount">
+<span id="id1"></span><h2>Select the staking amount<a class="headerlink" href="#select-the-staking-amount" title="Permalink to this headline"></a></h2>
+<img alt="Amount field" class="align-center" src="../_images/amount.png" />
+<p>This first field lets you select the amount of FLASH you wish to Flashback.
+You may directly select 25%, 50% or all of the FLASH balance in your wallet with the bottom buttons.
+The amount must be greater than 0 and lower or equal to your wallet’s FLASH balance.</p>
+</div>
+<div class="section" id="select-the-staking-duration">
+<span id="id2"></span><h2>Select the staking duration<a class="headerlink" href="#select-the-staking-duration" title="Permalink to this headline"></a></h2>
+<img alt="Duration field" class="align-center" src="../_images/duration.png" />
+<p>This second field lets you select how much time your Flashback will last.
+You will receive your FLASH rewards only after the time you select here, when the stake is finished.</p>
+<p>The only time unit available is days, and the value may range from 10 days to 365 days,
+as defined in the Flashback smart contract.</p>
+</div>
+<div class="section" id="check-the-flash-rewards">
+<span id="check-the-rewards"></span><h2>Check the FLASH rewards<a class="headerlink" href="#check-the-flash-rewards" title="Permalink to this headline"></a></h2>
+<p>Once a valid staking amount and staking duration have been selected,
+the FLASH rewards are automatically displayed as the third step, and update whenever the amount or time is changed.</p>
+<img alt="Rewards field" class="align-center" src="../_images/rewards.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the Flashback smart contract, FLASH rewards are calculated using this formula (simplified):
+amount * (rewardRate * duration), where rewardRate is a constant set so that,
+if the duration is 365 days, rewardRate * duration equals 1.
+This means that if you stake for one year, your rewards will be equal to the amount you staked i.e. you get a 100% APR.</p>
+</div>
+</div>
+<div class="section" id="approve-flash">
+<span id="approve-tokens-to-the-smart-contract"></span><h2>Approve FLASH<a class="headerlink" href="#approve-flash" title="Permalink to this headline"></a></h2>
+<p>To enable the Flashback smart contract to stake your FLASH, you need to give it permission to use your FLASH.
+To do this, simply click the APPROVE $FLASH button and validate the approval with your wallet.</p>
+</div>
+<div class="section" id="start-your-flashback">
+<span id="id3"></span><h2>Start your Flashback<a class="headerlink" href="#start-your-flashback" title="Permalink to this headline"></a></h2>
+<p>Once a valid staking amount and duration have been entered,
+and the approval for the stake token and fToken have been granted to the Flash Protocol,
+it is possible to click the Flashstake button to create a Flashstake.
+All that is required in this step is validating the transaction with your wallet.</p>
+<p>Et voilà, your first Flashstake has been created! Check your wallet to see the instant rewards you just received.</p>
+<p>To see your Flashstake(s) click on STAKE DASHBOARD at the bottom of the box.
+You might have to refresh the page to update the list and see your newly create Flashstake.
+<a class="reference internal" href="flashback-dashboard.html"><span class="doc">More on the Dashboard in the next page!</span></a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../flashstake/advanced-mode.html" class="btn btn-neutral float-left" title="Advanced mode" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="flashback-dashboard.html" class="btn btn-neutral float-right" title="Dashboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, XIO.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
