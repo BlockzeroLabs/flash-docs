@@ -50,6 +50,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Flashburn</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#select-a-strategy">Select a strategy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#select-the-amount-to-burn">Select the amount to burn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-the-slippage-tolerance">Change the slippage tolerance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approve-ftoken">Approve fToken</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flashburn-your-ftokens">Flashburn your fTokens</a></li>
 </ul>
 </li>
 </ul>
@@ -87,9 +90,9 @@ The more fTokens you burn, the bigger portion of the yield pool you shall receiv
 <ol class="arabic simple">
 <li><a class="reference internal" href="#select-a-strategy">Select a strategy</a></li>
 <li><a class="reference internal" href="#select-the-amount-to-burn">Select the amount to burn</a></li>
-<li><a href="#id3"><span class="problematic" id="id4">`Change the slippage tolerance`_</span></a></li>
-<li><a href="#id5"><span class="problematic" id="id6">`Approve fToken`_</span></a></li>
-<li><a class="reference internal" href="#flashburn">Flashburn</a></li>
+<li><a class="reference internal" href="#change-the-slippage-tolerance">Change the slippage tolerance</a></li>
+<li><a class="reference internal" href="#approve-ftoken">Approve fToken</a></li>
+<li><a class="reference internal" href="#launch-flashburn">Launch Flashburn</a></li>
 </ol>
 <div class="section" id="select-a-strategy">
 <span id="id1"></span><h2>Select a strategy<a class="headerlink" href="#select-a-strategy" title="Permalink to this headline"></a></h2>
@@ -105,6 +108,42 @@ You can search them by name or address using the search bar.</p>
 </div>
 <div class="section" id="select-the-amount-to-burn">
 <span id="id2"></span><h2>Select the amount to burn<a class="headerlink" href="#select-the-amount-to-burn" title="Permalink to this headline"></a></h2>
+<img alt="amount field" class="align-center" src="../_images/amount1.png" />
+<p>In the burn amount field, select the amount of fTokens you’d like to burn for yield.
+The value needs to be higher than zero and lower or equal to you fToken balance.
+You can directly select 25%, 50% or all of your balance with the bottom buttons.</p>
+</div>
+<div class="section" id="change-the-slippage-tolerance">
+<span id="id3"></span><h2>Change the slippage tolerance<a class="headerlink" href="#change-the-slippage-tolerance" title="Permalink to this headline"></a></h2>
+<p>Having a slippage tolerance for Flashburns is necessary, in case multiple users try to Flashburn at the same time.
+That is because we are sending the minimum returned yield to the smart contract (equal to the amount displayed in the reward box),
+but if other users Flashburn in the time between your reward estimation and your Flashburning, the supply changes,
+and therefore the minimum returned yield isn’t up to date anymore, causing the Flashburn transaction to fail.
+By selecting a slippage tolerance percentage,
+you lower the chances of such failure by taking into account the possibility the minimum returned yield may end up lower.</p>
+<img alt="slippage tolerance" class="align-center" src="../_images/slippage.png" />
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">The slippage tolerance is set to 0.1% by default, and is what the value switches to when clicking the AUTO button.
+If you set it lower than 0.1%, the transaction may fail for above-mentioned reasons.
+However, do not set it too high, else you may end up receiving an unsatisfying reward.</p>
+</div>
+</div>
+<div class="section" id="approve-ftoken">
+<span id="id4"></span><h2>Approve fToken<a class="headerlink" href="#approve-ftoken" title="Permalink to this headline"></a></h2>
+<p>For the strategy’s smart contract to be able to burn your fTokens,
+you need to grant it permission by clicking the APPROVE fTOKEN button and validate the approval with your wallet.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Here, we are granting approval for an fToken to the smart contract of a specific strategy.
+To Flashburn with another strategy, you will have to approve its principal fToken to its own smart contract.</p>
+</div>
+</div>
+<div class="section" id="flashburn-your-ftokens">
+<span id="launch-flashburn"></span><h2>Flashburn your fTokens<a class="headerlink" href="#flashburn-your-ftokens" title="Permalink to this headline"></a></h2>
+<p>To Flashburn, one a valid amount and slippage tolerance have been entered and the strategy’s contract was given approval for fTokens,
+simply click the FLASHBURN button and validate the transaction with your wallet.
+You should see your principal token balance increase and your fToken balance decrease accordingly.</p>
 </div>
 </div>
 
