@@ -34,3 +34,4 @@ Contents
 
    ./flashstake-app/create-flashstake.rst
    ./flashstake-app/flashstake-dashboard.rst
+   ./flashstake-app/advanced-mode.rst

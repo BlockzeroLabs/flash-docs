@@ -37,7 +37,14 @@
               <p class="caption"><span class="caption-text">Flashstake App</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="create-flashstake.html">Create a Flashstake</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Dashboard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dashboard</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#select-a-stake">Select a stake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unstake-early">Unstake early</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#withdraw-funds">Withdraw funds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mint-nft">Mint NFT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transfer-nft">Transfer NFT</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -66,6 +73,84 @@
              
   <div class="section" id="dashboard">
 <h1>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline"></a></h1>
+<p>The Stake Dashboard allows you to see all your active stakes and perform actions with them.
+More specifically, from the Dashboard, you can:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#select-a-stake-from-the-list">Select a stake from the list</a></li>
+<li><a class="reference internal" href="#unstake-part-or-all-of-your-staked-funds-early">Unstake part or all of your staked funds early</a></li>
+<li><a class="reference internal" href="#withdraw-your-funds-when-the-stake-is-finished">Withdraw your funds when the stake is finished</a></li>
+<li><a class="reference internal" href="#mint-a-stake-nft">Mint a stake NFT</a></li>
+<li><a class="reference internal" href="#transfer-a-stake-nft">Transfer a stake NFT</a></li>
+</ol>
+<div class="section" id="select-a-stake">
+<span id="select-a-stake-from-the-list"></span><h2>Select a stake<a class="headerlink" href="#select-a-stake" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>Only active stakes are shown in the Dashboard.</strong>
+Active stakes are stakes still containing funds.
+For example, if a stake is over but you didn’t withdraw your funds, that stake will still be considered active.
+If you withdraw all funds from a stake, no matter if that stake is over or ongoing,
+it will become inactive and disappear from the Dashboard.</p>
+<p class="last">Also, <strong>the active stakes on the Dashboard are those in your wallet.</strong>
+If you mint a stake NFT and transfer it to another address,
+the corresponding stake will not appear in your Dashboard anymore.
+However, it will appear in the Dashboard of the account you transferred it to.</p>
+</div>
+<img alt="dropdown" class="align-center" src="../_images/dropdown.png" />
+<p>You can select any active stake from the dropdown. The information displayed on the dropdown are, from left to right:</p>
+<ul class="simple">
+<li>Staked token logo and ticker</li>
+<li>Original staked amount</li>
+<li>NFT icon, if you minted a stake NFT for that particular stake</li>
+<li>Remaining time in days, hours or minutes</li>
+</ul>
+<p>Once you have selected a stake, all the information displayed below, as well as both action buttons
+(Unstake early/withdraw &amp; Mint NFT/Transfer NFT), refer to the selected stake.</p>
+</div>
+<div class="section" id="unstake-early">
+<span id="unstake-part-or-all-of-your-staked-funds-early"></span><h2>Unstake early<a class="headerlink" href="#unstake-early" title="Permalink to this headline"></a></h2>
+<p>If your stake is still ongoing, the first button is the UNSTAKE EARLY button, which opens a modal.</p>
+<img alt="unstake early modal" class="align-center" src="../_images/unstakeEarly.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Unstaking early requires burning fTokens.
+The easiest way to obtain fTokens in your wallet is to create a stake without Flashstaking,
+because Flashstaking burns the fTokens in the same transaction they are minted.
+To disable Flashstaking, use the <a class="reference internal" href="advanced-mode.html"><span class="doc">Advanced mode and uncheck “Flashstake your stake”</span></a>.</p>
+</div>
+<p>Unstaking early is disabled for stakes that are less than one hour old.</p>
+<p>In the amount field, select the amount of staked tokens you wish to unstake early.
+This amount has to be greater than zero and lower or equal to the remaining staked balance.
+Depending on the amount you wish to unstake early, the required amount of fTokens to burn changes.
+Unstaking early is disabled if your fToken balance is insufficient.</p>
+</div>
+<div class="section" id="withdraw-funds">
+<span id="withdraw-your-funds-when-the-stake-is-finished"></span><h2>Withdraw funds<a class="headerlink" href="#withdraw-funds" title="Permalink to this headline"></a></h2>
+<p>When the stake is over, you can withdraw your all of your remaining staked balance anytime.
+To do so, simply click the WITHDRAW button and validate the transaction with your wallet.
+The stake should disappear from the Dashboard after some time or after refreshing the page.</p>
+</div>
+<div class="section" id="mint-nft">
+<span id="mint-a-stake-nft"></span><h2>Mint NFT<a class="headerlink" href="#mint-nft" title="Permalink to this headline"></a></h2>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">You can also mint an NFT for your stake upfront, in the same transaction as it is created.
+To do so, use the <a class="reference internal" href="advanced-mode.html"><span class="doc">Advanced mode and check “Mint stake as NFT”</span></a>.</p>
+</div>
+<p>At any time while a stake is ongoing or after a stake is finished, you have the option to mint your stake as an NFT.
+The main benefit of minting a stake NFT is to be able to transfer your stake to another wallet.
+To mint an NFT, simply click the MINT NFT button and validate the transaction with your wallet.
+The NFT icon should appear in the dropdown item corresponding to the current stake.</p>
+</div>
+<div class="section" id="transfer-nft">
+<span id="transfer-a-stake-nft"></span><h2>Transfer NFT<a class="headerlink" href="#transfer-nft" title="Permalink to this headline"></a></h2>
+<p>Once you have minted your stake as an NFT, you can transfer it by first clicking the TRANSFER NFT button.
+That will open a dialog with a field where you can paste the address you wish to send your NFT to. Pasting is done either through Crtl+V, right-click + Paste, or by clicking the paste button on the right side of the field.
+Make sure that you paste a valid Ethereum address, else the input won’t change.</p>
+<img alt="transfer" class="align-center" src="../_images/transfer.png" />
+<p>Once a valid Ethereum address has been entered, you can simply press SEND and validate the transaction with your wallet.
+When the transaction is validated, the stake will disappear from your Dashboard and appear in your recipient’s.</p>
+</div>
 </div>
 
 
