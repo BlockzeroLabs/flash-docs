@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flash Receiver &mdash; Flash Protocol 0.1.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../contents.html" class="icon icon-home"> Flash Protocol
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/protocol-overview.html">Protocol Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Core Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core-concepts/flash-token.html">Flash Token</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core-concepts/flash-stake.html">Flash Stake</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Smart Contracts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/addresses.html">Addresses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/flash-protocol.html">Flash Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/gas-costs.html">Gas Cost</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/receiver.html">Building Flash Receiver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../smart-contracts/security.html">Security</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/fetching-data.html">Fetching protocol data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/stake.html">Stake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/unstake.html">Unstake</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Flash Protocol</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Flash Receiver</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/flashstake-app/flash-receiver.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="flash-receiver">
+<h1>Flash Receiver<a class="headerlink" href="#flash-receiver" title="Permalink to this headline"></a></h1>
+<p>Whenever a user stake he can choose the destination of the yield. The yield destination, can be either EOA (externally owned account) or a contract.</p>
+<p>If the yield destination is EOA (externally owned account), then the yield is simply transferred to this address.</p>
+<p>However, if the yield destination is a contract, then a specific contract interface is invoked.</p>
+<p>This functionality allows anyone to build their own dApp with their own flash receiver on top of the Flash Protocol.</p>
+<div class="section" id="anatomy-of-the-receiver">
+<h2>Anatomy of the receiver<a class="headerlink" href="#anatomy-of-the-receiver" title="Permalink to this headline"></a></h2>
+<p>If the receiver is a contract, the following interface should be exposed by that contract.</p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span>function receiveFlash(
+    bytes32 id,
+    uint256 amountIn,
+    uint256 expireAfter,
+    uint256 mintedAmount,
+    address staker,
+    bytes calldata data)
+external returns (uint256);
+</pre></div>
+</div>
+<ul class="simple">
+<li><strong>id:</strong> this is the stake id. With the stake id you can fetch the stake data from the protocol.</li>
+<li><strong>amountIn:</strong> this is the $FLASH amount that the user has staked.</li>
+<li><strong>expireAfter:</strong> the time after which the stake will expire.</li>
+<li><strong>mintedAmount:</strong> the amount of minted $FLASH - this is basically the yield being redirected to the Flash Receiver.</li>
+<li><strong>staker:</strong> the address of the user.</li>
+<li><strong>data:</strong> arbitrary data passed from the protocol - it’s up to the dApp what kind of data is passed.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, XIO.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

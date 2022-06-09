@@ -34,7 +34,7 @@ The match ratio can be as low as 0% and as high as 20%. That ratio can be change
 
 Is there a Flash Protocol token?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Yes, there is a token called $FLASH. The Flash Token does not have a fixed supply and the contract address is **0xb4467e8d621105312a914f1d42f10770c0ffe3c8**.
+Yes, there is a token called $FLASH. The Flash Token does not have a fixed supply and the contract address is **0x20398ad62bb2d930646d45a6d4292baa0b860c1f**.
 Users can use the $FLASH token in order to stake and earn instant upfront yield.
 
 **Miscellaneous**

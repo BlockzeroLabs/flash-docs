@@ -18,7 +18,7 @@ PYTHONPATH = sys.path.insert(0, os.path.abspath('.'))
 # -- Project information -----------------------------------------------------
 
 project = 'Flash Protocol'
-copyright = '2021, XIO'
+copyright = '2022, XIO'
 author = 'XIO Network'
 
 # The full version, including alpha/beta/rc tags

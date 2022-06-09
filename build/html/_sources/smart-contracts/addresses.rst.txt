@@ -9,8 +9,8 @@ Mainnet
    :header: "Contract", "Address"
    :widths: 10, 30
 
-   "Flash Token", "0xb4467e8d621105312a914f1d42f10770c0ffe3c8"
-   "Flash Protocol", "0x"
+   "Flash Token", "0x20398ad62bb2d930646d45a6d4292baa0b860c1f"
+   "Flash Protocol", "0x15EB0c763581329C921C8398556EcFf85Cc48275"
    "Flash App", "0x"
 
 
@@ -33,6 +33,6 @@ Ropsten
    :header: "Contract", "Address"
    :widths: 10, 30
 
-   "Flash Token", "0xb4467e8d621105312a914f1d42f10770c0ffe3c8"
+   "Flash Token", "0x"
    "Flash Protocol", "0x"
    "Flash App", "0x"
