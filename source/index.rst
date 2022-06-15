@@ -66,5 +66,3 @@ Contents
    ./smart-contracts/overview.rst
    ./smart-contracts/flash-protocol.rst
    ./smart-contracts/flash-strategy.rst
-   ./smart-contracts/flash-ftoken.rst
-   ./smart-contracts/flash-nft.rst
