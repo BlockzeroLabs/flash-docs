@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 15 16:24:46 2022
+# Make data base, printed on Thu Jun 16 13:06:55 2022
 
 # Variables
 
@@ -89,7 +89,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/benazlay-UX410UAK:@/tmp/.ICE-unix/1205,unix/benazlay-UX410UAK:/tmp/.ICE-unix/1205
+SESSION_MANAGER = local/benazlay-UX410UAK:@/tmp/.ICE-unix/1234,unix/benazlay-UX410UAK:/tmp/.ICE-unix/1234
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -109,7 +109,7 @@ XDG_SESSION_DESKTOP = cinnamon
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 11959
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5506
 # automatic
 %F = $(notdir $%)
 # environment
@@ -127,7 +127,7 @@ QT_QPA_PLATFORMTHEME = qt5ct
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1280
+SSH_AGENT_PID = 1309
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = X-Cinnamon
 # environment
@@ -139,7 +139,7 @@ HOME = /home/benazlay
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-VSCODE_CODE_CACHE_PATH = /home/benazlay/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+VSCODE_CODE_CACHE_PATH = /home/benazlay/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LOGNAME = benazlay
 # environment
@@ -169,7 +169,7 @@ QT_IM_MODULE = ibus
 # environment
 SHLVL = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b4492c4c-8e71-4b17-b07f-4ed8bc56f49b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-43b8217b-c061-4067-9beb-c28d16993d9e.sock
 # environment
 XDG_SESSION_ID = c2
 # environment
@@ -197,7 +197,7 @@ LANGUAGE = en_US
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-f81f42f4-1.68.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f81f42f4-1.68.1-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -253,7 +253,7 @@ LANG = C
 # makefile (from 'Makefile', line 8)
 SOURCEDIR = source
 # environment
-VSCODE_PID = 11959
+VSCODE_PID = 5506
 # variable set hash-table stats:
 # Load=122/1024=12%, Rehash=0, Collisions=13/157=8%
 
@@ -278,9 +278,9 @@ VSCODE_PID = 11959
 # Files
 
 all: Makefile
+ 
 #  Command line target.
 #  Implicit rule search has been done.
- 
 #  Implicit/static pattern stem: 'all'
 #  File does not exist.
 #  File has been updated.
@@ -346,6 +346,6 @@ help:
 # strcache performance: lookups = 29 / hit rate = 41%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=1/29=3%
-# Finished Make data base on Wed Jun 15 16:24:46 2022
+# Finished Make data base on Thu Jun 16 13:06:55 2022
 
  

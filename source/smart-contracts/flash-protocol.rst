@@ -21,10 +21,10 @@ Register Strategy
 
 With the registerStrategy method, you can register a custom strategy for Flashstaking. It takes as parameters:
 
-* *_strategyAddress*: your strategy's smart contract address (see `Flashstake strategy </smart-contract/flash-strategy>`)
-* *_principalTokenAddress*: your strategy's principal token (staked and received). For example, if your strategy is used to stake DAI, _principalTokenAddress would be the DAI stablecoin's smart contract address.
-* *_fTokenName*: what the fToken minted when Flashstaking/staking shall be called.
-* *_fTokenSymbol*: which symbol should be given to the fToken minted when Flashstaking/staking.
+* **_strategyAddress**: your strategy's smart contract address (see `Flashstake strategy </smart-contract/flash-strategy>`)
+* **_principalTokenAddress**: your strategy's principal token (staked and received). For example, if your strategy is used to stake DAI, _principalTokenAddress would be the DAI stablecoin's smart contract address.
+* **_fTokenName**: what the fToken minted when Flashstaking/staking shall be called.
+* **_fTokenSymbol**: which symbol should be given to the fToken minted when Flashstaking/staking.
 
 Stake
 ^^^^^^
@@ -41,11 +41,11 @@ Stake
 
 The stake method creates a new stake with a registered strategy of your choosing. Its parameters are:
 
-* *_strategyAddress*: address of a registered strategy. You have to register the strategy with the above-described registerStrategy method first before passing its address here.
-* *_tokenAmount*: amount (in Wei) of staked tokens.
-* *_stakeDuration*: total duration (in seconds) of the stake.
-* *_fTokensTo*: the address the minted fTokens shall be sent to.
-* *_issueNFT*: mint stake as NFT upfront.
+* **_strategyAddress**: address of a registered strategy. You have to register the strategy with the above-described registerStrategy method first before passing its address here.
+* **_tokenAmount**: amount (in Wei) of staked tokens.
+* **_stakeDuration**: total duration (in seconds) of the stake.
+* **_fTokensTo**: the address the minted fTokens shall be sent to.
+* **_issueNFT**: mint stake as NFT upfront.
 
 Flashstake
 ^^^^^^^^^^
@@ -60,8 +60,8 @@ Flashstake
         bool _mintNFT
     ) external nonReentrant
 
-The *flashStake* method is similar to *stake*, which it calls before burning the minted fTokens for principal.
-The *_yieldTo* parameter has the same function as the *_fTokensTo* parameter in *stake*.
+The **flashStake** method is similar to *stake*, which it calls before burning the minted fTokens for principal.
+The **_yieldTo** parameter has the same function as the *_fTokensTo* parameter in *stake*.
 
 Unstake
 ^^^^^^^
@@ -76,9 +76,9 @@ Unstake
 
 The *unstake* method unstakes your Flashstake/stake, either partially or completely. Parameters:
 
-* *_id*: your stake's ID.
-* *_isNFT*: true if your stake has been minted as an NFT; false otherwise.
-* *_fTokenToBurn*: amount of fTokens to be burnt to unstake your desired amount of principal for your stake.
+* **_id**: your stake's ID.
+* **_isNFT**: true if your stake has been minted as an NFT; false otherwise.
+* **_fTokenToBurn**: amount of fTokens to be burnt to unstake your desired amount of principal for your stake.
 
 Issue NFT
 ^^^^^^^^^
@@ -102,6 +102,9 @@ Get stake info
 Events
 --------
 
+Strategy Registered
+^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: solidity
 
     event StrategyRegistered(
@@ -109,10 +112,51 @@ Events
         address indexed _principalTokenAddress,
         address indexed _fTokenAddress
     );
+
+* **_strategyAddress**: address of the newly registered strategy.
+* **_principalTokenAddress**: address of the newly registered strategy's principal token.
+* **_fTokenAddress**: address of the newly registered strategy's principal token.
+
+
+
+Staked
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: solidity
+
     event Staked(uint256 _stakeId);
+
+* **_stakeId**: ID of the newly created stake.
+
+
+Unstaked
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: solidity
+
     event Unstaked(uint256 _stakeId, uint256 _tokensReturned, uint256 _fTokensBurned, bool _stakeFinished);
+
+* **_stakeId**: ID of the stake from which funds were unstaked.
+* **_tokensReturned**: amount of principal tokens withdrawn from stake.
+* **_fTokensBurned**: amount of fTokens burned to perform the unstaking.
+* **_stakeFinished**: true if the stake duration is over and/or if all funds were unstaked; false otherwise.
+
+NFT Issued
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: solidity
+
     event NFTIssued(uint256 _stakeId, uint256 nftId);
+
+* **_stakeId**: ID of the stake.
+* **nftId**: ID of the newly minted NFT.
+
+NFT Redeemed
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: solidity
+
     event NFTRedeemed(uint256 _stakeId, uint256 nftId);
 
-
-
+* **_stakeId**: ID of the stake.
+* **nftId**: ID of the newly minted NFT.
