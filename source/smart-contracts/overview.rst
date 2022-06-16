@@ -1,29 +1,6 @@
 Overview
 ===============
 
-Key concepts
---------------
-
-Strategy
-^^^^^^^^^
-
-A *strategy* is a smart contract inheriting the :doc:`Flash Strategy interface </smart-contracts/flash-strategy>`.
-It uses one or more DeFi protocols (e.g. AAVE, Convex...) to stake a specific token (e.g. DAI, ETH...).
-The :doc:`Flash Protocol </smart-contracts/flash-strategy>` uses the strategy to instantly mint fTokens when staking.
-
-fToken
-^^^^^^^
-
-An *fToken* is an ERC-20 token, created through the FlashFTokenFactory contract,
-using the FlashFToken contract (which is an ERC-20 contract).
-
-When staking with the :doc:`Flash Protocol </smart-contracts/flash-strategy>` fTokens are minted using the strategy's contract.
-If you Flashstake your stake, then the minted fTokens are immediately burned for yield.
-
-If you hold fTokens, you can also use the strategy contract to burn them at any time to withdraw principal from the yield pool
-(see :doc:`Flashburn </user-interface/flashburn>`).
-
-
 Addresses
 -----------
 
