@@ -1,6 +1,8 @@
 Overview
 ===============
 
+The smart contracts have been deployed on Kovan and Ethereum mainnet.
+
 Addresses
 -----------
 
@@ -10,6 +12,7 @@ Kovan
 .. csv-table::
    :header: "Contract", "Address"
    :widths: 10, 30
+
 
    "Flash Token", "0x9887281FC23CA955bbbBeC3cDbB8BFc4999290E4"
    "Flash Protocol", "0x93213162Dd8A23c83d4D7E25f1282C94d2890528"

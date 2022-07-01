@@ -21,11 +21,8 @@ aspects of the protocol.
 Developer links
 ---------------
 
-The Flashstake protocol consists of two main modules:
-- Flash Protocol
-- Flash Strategy
-
-You can learn more about these by following the above links.
+The Flashstake protocol consists of two main modules - the Flash Strategy and the Flash Strategies. You can learn more
+by navigating to the appropriate pages from the sidebar.
 
 Contents
 ========
@@ -41,10 +38,11 @@ Contents
    :maxdepth: 3
    :caption: Core Concepts
 
+   ./core-concepts/strategies.rst
+   ./core-concepts/ftokens.rst
+   ./core-concepts/flashburn.rst
    ./core-concepts/flashstake.rst
    ./core-concepts/flashback.rst
-   ./core-concepts/flashburn.rst
-   ./core-concepts/ftokens.rst
 
 .. toctree::
    :maxdepth: 3
@@ -66,3 +64,4 @@ Contents
    ./smart-contracts/overview.rst
    ./smart-contracts/flash-protocol.rst
    ./smart-contracts/flash-strategy.rst
+   ./security.rst
