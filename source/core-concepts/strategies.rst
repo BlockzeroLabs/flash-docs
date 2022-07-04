@@ -12,6 +12,11 @@ The :doc:`Flash Protocol </smart-contracts/flash-strategy>` uses the strategy to
 The registry of a new strategy in the Flashstake smart contract results in the creation of a strategy specific ERC20 token, called **fToken**.
 This token facilitates the conversion of any type of yield into fixed upfront yield, representing the future yield of the deposit.
 
+.. important::
+    Strategies can be developed and deployed against the Flash Protocol by anyone. This gives Strategy creators maximum
+    flexibility when it comes to internal logic. It is important users are aware and fully trust the Strategy before
+    depositing tokens.
+
 A typical strategy requires accounting for yield separately from users' principal.
 This accounting separation of yield is referred to as “yield pool”.
 If the yield of the underlying strategy is generated over time (for example through lending out the principal on spot lending markets)
@@ -20,7 +25,14 @@ The claiming process of upfront yield involves burning fToken for a proportional
 For example, if a user owns 10% of the total supply of the strategy specific fToken and burns them against the yield pool,
 the returned upfront yield is equal to 10% of capital in the yield pool.
 
+
 Strategies only accept one input token (principal).
 The same token must accumulate in the yield pool and be used as upfront yield.
 If a strategy involves yield farming, where one or more third party tokens are collected,
 then the strategy needs to ensure conversion back into the principal token to make it available in the yield pool.
+
+.. note::
+    Strategies are responsible for telling the Flash Protocol how many principal tokens have been deposited and so
+    how many should be returned at the end of the stake duration. This allows custom strategies to take a fee
+    from the principal if they so wish.
+

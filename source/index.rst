@@ -24,6 +24,7 @@ Developer links
 The Flashstake protocol consists of two main modules - the Flash Strategy and the Flash Strategies. You can learn more
 by navigating to the appropriate pages from the sidebar.
 
+
 Contents
 ========
 

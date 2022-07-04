@@ -1,5 +1,5 @@
-**Flashburn**
--------------
+FlashBurn
+=============
 
 If you hold fTokens (like fDAI), you can burn them for yield at anytime.
 Indeed, holding fTokens make you entitled to a portion of the yield pool of a certain strategy.

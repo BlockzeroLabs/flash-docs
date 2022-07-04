@@ -1,5 +1,5 @@
-**Flashback Dashboard**
-------------------------
+Flashback Dashboard
+==========================
 
 The Stake Dashboard allows you to see all your active stakes and perform actions with them.
 More specifically, from the Dashboard, you can:

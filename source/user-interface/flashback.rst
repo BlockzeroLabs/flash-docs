@@ -1,4 +1,4 @@
-**Flashback**
+Flashback
 -------------
 
 Flashbacks are a way to reward FLASH token holders,

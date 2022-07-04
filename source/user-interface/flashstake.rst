@@ -1,5 +1,5 @@
-**Flashstake**
-----------------
+FlashStake
+===============
 
 It takes only a few simple steps to create a Flashstake and receive instant yield:
 

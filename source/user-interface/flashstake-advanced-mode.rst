@@ -1,5 +1,5 @@
-**Flashstake Advanced Mode**
-----------------------------
+FlashStake Advanced Mode
+=======================================
 
 .. caution::
     This section is meant for advanced users and will not be necessary for most Flashstakers.
