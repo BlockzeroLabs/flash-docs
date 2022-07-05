@@ -7,31 +7,34 @@ The Smart Contracts have been designed to be as permissionless as possible.
 
 This page details the admin functionalities, audits and any other security related information.
 
+.. important::
+    The Flashstake Protocol has achieved over 95% test coverage within internal unit tests.
+
+    The protocol has been audited by PeckShield and Openkertify/Secure3 with no major items found.
+
+    Over 2,000 users tested the protocol on testnet generating over 250,000 individual interactions.
+
 Audit
 ======
 
-The Flashstake Protocol has been audited by two third party companies in isolation. Minor issues were found with the
-initial submitted code but all items have been resolved.
+The Flashstake Protocol has been audited by two third party companies in isolation. No major issues were found
+with the audited code. Medium and Low items have been addressed.
 
 PeckShield: https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-Flashstake-v1.0.pdf
 
 Openkertify / Secure3: xxx
 
-.. important::
-    This does not guarantee there are no bugs present.
-
-
 Testnet Competition
 ===================
 
-Blockzero Labs have kindly run testnet competitions with their community which allowed the Flashstake Protocol to be
-deployed and tested on Kovan. This allowed us to have over 2,000 participants with in excess of 500,000 individual
-interactions with our contracts.
+Blockzero Labs have run testnet competitions with their community which allowed the Flashstake Protocol to be
+deployed and tested on Kovan. This allowed the protocol to be tested with over 2,000 participants generating in excess
+of 250,000 individual interactions with the contracts.
 
-There were XXXXX bugs found in total which were not caught in audit. These have been detailed below (and rectified):
+These testnet runs have allowed us to find and resolve the following Smart Contract bugs:
 
 #. FlashNFT's were being burned when early unstaking
-#. Users were unable to Flashstake and redirect all yield to another address
+#. Unable to Flashstake and redirect all yield to another address (transaction fail)
 
 
 Admin Functionality
@@ -52,7 +55,7 @@ allows staking of DAI and the Convex Strategy which allows the staking of cvxCRV
 functionalities within these - none which allow movement of user funds.
 
 Unit Tests
-======
+==========
 
 The Flashstake Protocol has a vast array of unit tests to ensure the protocol behaves as intended. The total code coverage
 is over 95%.
