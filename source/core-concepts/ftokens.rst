@@ -44,5 +44,5 @@ The formula used to determine fToken created within strategies at launch:
 
     fTokenamount = Deposit * StakeDuration_{(seconds)} * \frac{31,709,792,000}{10^{decimals}}
 
-This means staking 1 principal token (18 decimals) for 365 days will result in 1 fToken being minted.
+This means staking 1 principal token for 365 days will result in just over 1 fToken being minted.
 
