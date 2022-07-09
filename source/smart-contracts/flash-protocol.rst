@@ -220,3 +220,65 @@ NFT Issued
 * **_stakeId**: ID of the stake.
 * **nftId**: ID of the newly minted NFT.
 
+
+Error Messages
+---------------
+
+SNE: Stake Not Exists
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The provided stake reference points to a Stake that is not active.
+
+NSO: Not Stake Owner
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The caller does not own the referenced Stake.
+
+NNO: Not NFT Owner
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The caller is not the owner of the supplied NFT id
+
+SNM: Stake NFT Missing
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The required NFT is missing from the callers wallet.
+
+NTR: NFT Token Required
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The user may either; not have the associated NFT to the specified Stake or there is no Stake associated to the referenced NFT id.
+
+MIN DUR 1HR
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The Flash Protocol enforces a waiting time of 1 hour before callers can unstake early.
+
+ISD: Invalid Stake Duration
+^^^^^^^^^^^^^^^^^^^
+
+Function: Unstake
+
+Reason: The supplied _stakeDuration is either not greater 60 seconds or is greater than the max Stake duration as
+specified by the Flash Strategy.
+
+
+EMD: Exceeds Max Duration
+^^^^^^^^^^^^^^^^^^^
+
+Function: Stake
+
+Reason: The user may either; not have the associated NFT to the specified Stake or there is no Stake associated to the
+provided NFT Id.
