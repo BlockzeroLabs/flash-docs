@@ -17,7 +17,7 @@ Deposit principal
 This function will be called whenever a user stakes via the Flash Protocol. The Strategy owner can choose to implement
 a fee but the resulting "locked" principal the user should expect after the stake has ended must be returned.
 
-.. note::
+.. danger::
     This function should be protected such that only the Flash Protocol can execute this. This is to ensure users
     do not accidentally call this function and lose their funds.
 
@@ -31,7 +31,8 @@ Withdraw principal
 This function should withdraw principal from the underlying strategy (eg AAVE).
 
 .. note::
-    This function should be protected such that only the Flash Protocol can execute this.
+    This function should be protected such that only the Flash Protocol can execute this. Keeping this unprotected
+    would of course mean anyone would withdraw principal tokens from your strategy.
 
 Burn fToken
 ^^^^^^^^^^^^^
@@ -54,7 +55,7 @@ Get principal balance
 
     function getPrincipalBalance() external view returns (uint256);
 
-This should return the current total of all principal accepted by the contract.
+This must return the current total of all principal accepted by the contract.
 
 Get yield balance
 ^^^^^^^^^^^^^
@@ -72,7 +73,7 @@ Get principal address
 
     function getPrincipalAddress() external view returns (address);
 
-This should return the principal token address (eg DAI).
+This must return the principal token address (eg DAI).
 
 Quote mint fToken
 ^^^^^^^^^^^^^

@@ -139,8 +139,8 @@ This method will return all the information for a given stake. The information r
         uint256 nftId; // NFT id if set
         uint256 fTokensToUser; // How many fERC20 tokens were minted
         uint256 fTokensFee; // How many fERC20 tokens were taken as fee
-        uint256 totalFTokenBurned;
-        uint256 totalStakedWithdrawn;
+        uint256 totalFTokenBurned; // The total fTokens burned against this Stake (early unstaking related)
+        uint256 totalStakedWithdrawn; // The total staked tokens withdrawn from this Stake (early unstaking related)
     }
 
 
@@ -178,7 +178,7 @@ Strategy Registered
 
 * **_strategyAddress**: address of the newly registered strategy.
 * **_principalTokenAddress**: address of the newly registered strategy's principal token.
-* **_fTokenAddress**: address of the newly registered strategy's principal token.
+* **_fTokenAddress**: address of the newly registered strategy's fToken.
 
 
 
