@@ -10,7 +10,7 @@ created after the initial stake providing the Stake still has some number of Sta
 
 .. danger::
     Transferring the FlashNFT means transferring all rights to the Stake. This means all staked tokens will belong to the
-    new NFT owner.
+    new NFT owner. Read more at :doc:`FlashNFT </core-concepts/flashnft>`.
 
 The naming convention for fTokens that should be adhered to is based on the principal token and the first four letters
 in the corresponding Strategy address - eg fDAI-0123. This is to ensure users can easily distinguish which underlying
