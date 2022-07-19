@@ -1,4 +1,4 @@
-F Tokens (Stake)
+FTokens (Stake)
 ===============
 
 An *fToken* is an ERC-20 token, created by the Flash protocol whenever a new strategy is registered. fTokens are specific

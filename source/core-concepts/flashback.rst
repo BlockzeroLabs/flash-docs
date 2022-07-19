@@ -23,12 +23,14 @@ The Staking token and Reward token can be the same ERC-20 token or different.
 The reward a given stake is entitled to is calculated as shown:
 
 .. math::
-    reservedReward = \frac{(stakedTokens * (rewardRate * durationSecs))}{(10**18)}
+    reservedReward = \frac{((duration**2) * (maxAPR * stakedTokens))} {(10000 * 994519296000000)}
 
 .. important::
     In the event the above calculation is higher than remaining rewards, reservedReward will be equal to remaining rewards.
 
-The rewardRate is configurable by the Owner of the contract and can be increased or decreased at any point in time.
+The maxAPR is configurable by the Owner of the contract and can be increased or decreased at any point in time. The
+maxAPR variable has been designed to be an integer between 1 and 10,000 which signifies 0.01% and 100%. This variable
+can be configured to be higher than 10,000 which results in an annual return rate of over 100%.
 
 .. note::
-    Increasing/decreasing rewardRate only effects new Stakes.
+    Increasing/decreasing maxAPR only effects new Stakes.

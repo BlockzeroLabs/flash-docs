@@ -21,7 +21,7 @@ Register Strategy
 
 With the registerStrategy method, you can register a custom strategy for Flashstaking. It takes as parameters:
 
-* **_strategyAddress**: your strategy's smart contract address (see `Flashstake strategy </smart-contract/flash-strategy>`)
+* **_strategyAddress**: your strategy's smart contract address (see :doc:`../smart-contracts/flash-strategy`)
 * **_principalTokenAddress**: your strategy's principal token (staked and received). For example, if your strategy is used to stake DAI, _principalTokenAddress would be the DAI stablecoin's smart contract address.
 * **_fTokenName**: what the fToken minted when Flashstaking/staking shall be called.
 * **_fTokenSymbol**: which symbol should be given to the fToken minted when Flashstaking/staking.
@@ -54,6 +54,12 @@ The stake method creates a new stake with a registered strategy of your choosing
 * **_fTokensTo**: the address the minted fTokens shall be sent to.
 * **_issueNFT**: mint stake as NFT upfront.
 
+
+.. note::
+    Redirecting fTokens by providing a different address in the _fTokensTo address will result in only the resulting
+    fTokens to be redirected. The Stake ownership will be retained by the caller. This also means when minting a FlashNFT,
+    this will be retained by the caller (Staker).
+
 Flashstake
 ^^^^^^^^^^
 
@@ -68,9 +74,14 @@ Flashstake
         bool _mintNFT
     ) external {
 
-The **flashStake** method is similar to *stake*, which it calls before burning the minted fTokens for principal. Upon
+The **flashStake** method is similar to *stake*, which it calls before burning the minted fTokens for yield. Upon
 staking, the fTokens minted will be held by the Flash Protocol and then immediately burned with the resulting yield
 being redirected to _yieldTo.
+
+.. note::
+    Redirecting yield by providing a different address in the _yieldTo address will result in only the resulting
+    yield to be redirected. The Stake ownership will be retained by the caller. This also means when minting a FlashNFT,
+    this will be retained by the caller (Staker).
 
 Unstake
 ^^^^^^^
