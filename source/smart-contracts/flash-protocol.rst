@@ -162,23 +162,6 @@ set to 20%, the user will receive 800 fTokens.
 .. note::
     This function can only be called by the Owner.
 
-
-.. code-block:: solidity
-
-    struct StakeStruct {
-        address stakerAddress; // Address of staker
-        address strategyAddress; // Address of strategy being used
-        uint256 stakeStartTs; // Unix timestamp of when stake started
-        uint256 stakeDuration; // Time in seconds from start time until stake ends
-        uint256 stakedAmount; // The amount of tokens staked
-        bool active; // Stake has been removed/unstaked
-        uint256 nftId; // NFT id if set
-        uint256 fTokensToUser; // How many fERC20 tokens were minted
-        uint256 fTokensFee; // How many fERC20 tokens were taken as fee
-        uint256 totalFTokenBurned;
-        uint256 totalStakedWithdrawn;
-    }
-
 Events
 --------
 
