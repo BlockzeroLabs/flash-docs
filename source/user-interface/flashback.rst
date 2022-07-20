@@ -7,8 +7,10 @@ Flashbacks are not about receiving upfront yield: the rewards are received only 
 
 Flashbacking is as easy as Flashstaking. Just follow these five easy steps:
 
+#. `Select the stake token`_
 #. `Select the staking amount`_
 #. `Select the staking duration`_
+#. `Select the best LP tier`_
 #. `Check the rewards`_
 #. `Approve tokens to the smart contract`_
 #. `Start your Flashback`_
@@ -16,7 +18,28 @@ Flashbacking is as easy as Flashstaking. Just follow these five easy steps:
 
 In this page, we'll go over each of these steps in detail.
 
+.. _Select the stake token:
+
+Select the stake token
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /images/flashback/selectModal.png
+    :alt: Select token modal
+    :align: center
+
+There are two tokens available for Flashbacking: FLASH tokens and ETH/FLASH Liquidity Pool tokens (referred here as *LP*).
+By default, FLASH is selected. You can change the staking token by clicking the dropdown at the top of the page.
+This opens a modal from which you can select either FLASH or LP.
+
+.. hint::
+    There is one smart contract for Flashbacking FLASH, but three separate ones for Flashbacking LP,
+    each corresponding to a different tier.
+    To select either of the three tiers, see :ref:`this part <Select the best LP tier>`.
+
 .. _Select the staking amount:
+
+Select the staking amount
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /images/flashback/amount.png
     :alt: Amount field
@@ -28,6 +51,9 @@ The amount must be greater than 0 and lower or equal to your wallet's FLASH bala
 
 .. _Select the staking duration:
 
+Select the staking duration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. image:: /images/flashback/duration.png
     :alt: Duration field
     :align: center
@@ -38,7 +64,28 @@ You will receive your FLASH rewards only after the time you select here, when th
 The only time unit available is days, and the value may range from 10 days to 365 days,
 as defined in the Flashback smart contract.
 
+.. _Select the best LP tier:
+
+Select the best LP tier
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+    This part only applies to **staking LP**, not to staking FLASH.
+    :ref:`You can select the staking LP option here <Select the stake token>`.
+
+.. image:: /images/flashback/tier.png
+    :alt: LP tier selection
+    :align: center
+
+In this part, you can select either of the three LP Flashback contracts, referred to a *tiers*.
+Tier 1 is selected by default.
+Tiers may have a different APRs and max/min durations from one another.
+Therefore, you may select the tier that best fits your needs in terms of staking time or APR.
+
 .. _Check the rewards:
+
+Check your rewards
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once a valid staking amount and staking duration have been selected,
 the FLASH rewards are automatically displayed as the third step, and update whenever the amount or time is changed.
@@ -47,26 +94,23 @@ the FLASH rewards are automatically displayed as the third step, and update when
     :alt: Rewards field
     :align: center
 
+.. _Approve token to the smart contract:
+
+Approve token to the smart contract
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To enable the Flashback smart contract to stake your FLASH or LP, you need to give it permission to use your FLASH or LP.
+To do this, simply click the APPROVE button and validate the approval with your wallet.
+
 .. note::
-    In the Flashback smart contract, FLASH rewards are calculated using this formula (simplified):
-    amount * (rewardRate * duration), where rewardRate is a constant set so that,
-    if the duration is 365 days, rewardRate * duration equals 1.
-    This means that if you stake for one year, your rewards will be equal to the amount you staked i.e. you get a 100% APR.
-
-.. _Approve tokens to the smart contract:
-
-To enable the Flashback smart contract to stake your FLASH, you need to give it permission to use your FLASH.
-To do this, simply click the APPROVE $FLASH button and validate the approval with your wallet.
+    The approval of LP only counts towards a specific tier contract.
+    To Flashback with another tier you will have to approve LP separately.
 
 .. _Start your Flashback:
 
-Once a valid staking amount and duration have been entered,
-and the approval for the stake token and fToken have been granted to the Flash Protocol,
-it is possible to click the Flashstake button to create a Flashstake.
-All that is required in this step is validating the transaction with your wallet.
+Start your Flashback
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Et voilà, your first Flashstake has been created! Check your wallet to see the instant rewards you just received.
-
-To see your Flashstake(s) click on STAKE DASHBOARD at the bottom of the box.
+To see your Flashback(s) click on STAKE DASHBOARD at the bottom of the box.
 You might have to refresh the page to update the list and see your newly create Flashstake.
 :doc:`More on the Dashboard in the next page! </user-interface/flashback-dashboard>`

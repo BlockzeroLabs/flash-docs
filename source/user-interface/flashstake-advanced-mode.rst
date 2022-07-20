@@ -25,7 +25,6 @@ Strategy selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Flashstake's default strategy is DAI-AAVE.
-It is the one used by non-advanced users and selected by default when switching on the advanced mode.
 The advanced mode allows you to select any other strategy available on the app.
 
 .. image:: /images/flashstake/strategy.png
@@ -40,14 +39,10 @@ You can use the help of the search bar to look up a specific strategy's name or 
 Flashstake your stake
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This option is on by default,
-as the stakes done on the Flashstake app use the flashStake method from the Flash Protocol smart contract by default.
-If it is switched off, then instead of the FlashStake method, your stake will be directly created by the stake method.
-The difference is that the flashStake method calls the stake method,
-which creates fTokens, and goes on to immediately burn those fTokens for principal i.e. your upfront yield.
-If you only call the stake method, then the fTokens are not burnt but sent to your wallet.
-Therefore, you should use this option if you want to receive fTokens instead of the reward token,
-which you can then burn for principal or for yield.
+This option is on by default.
+If kept active, performing a Flashstake will result in receiving plain yield by immediately burning the fTokens generated.
+If turned off, you will receive the fTokens instead, which you then can use manually to unlock ongoing stakes,
+burn yield or potentially trade on the secondary market.
 
 .. image:: /images/flashstake/fDai.png
     :alt: fDai_rewards
@@ -82,6 +77,4 @@ Mint stake as NFT
     To do so, use the :doc:`Mint NFT button in the Stake Dashboard</user-interface/flashstake-dashboard>`.
 
 If you switch on Mint stake as NFT, an NFT of your stake shall be minted in the same transaction as the stake is created.
-This works no matter if :ref:`Flashstake your stake <Flashstaking your stake>` is swtiched on or off,
-because the issueNFT method in the Flash Protocol smart contract is called inside the stake method,
-provided that the _issueNFT parameter is set to true.
+This works no matter if :ref:`Flashstake your stake <Flashstaking your stake>` is switched on or off.

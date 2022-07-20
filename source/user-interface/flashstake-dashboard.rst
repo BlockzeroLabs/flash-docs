@@ -64,19 +64,19 @@ Unstaking early is disabled if your fToken balance is insufficient.
 
 .. _Withdraw your funds when the stake is finished:
 
-When the stake is over, you can withdraw your all of your remaining staked balance anytime.
+When the stake is over, you can withdraw your remaining staked balance anytime.
 To do so, simply click the WITHDRAW button and validate the transaction with your wallet.
 The stake should disappear from the Dashboard after some time or after refreshing the page.
 
 .. _Mint a stake NFT:
 
 .. hint::
-    You can also mint an NFT for your stake upfront, in the same transaction as it is created.
+    You can also mint an NFT for your stake in the same transaction as it is created.
     To do so, use the :doc:`Advanced mode and check "Mint stake as NFT" </user-interface/flashstake-advanced-mode>`.
 
 At any time while a stake is ongoing or after a stake is finished, you have the option to mint your stake as an NFT.
-The main benefit of minting a stake NFT is to be able to transfer your stake to another wallet.
-To mint an NFT, simply click the MINT NFT button and validate the transaction with your wallet.
+Minting a stake NFT allows you to transfer the staked principal to a different wallet or even trade it on NFT marketplaces.
+To mint a NFT, simply click the MINT NFT button and validate the transaction with your wallet.
 The NFT icon should appear in the dropdown item corresponding to the current stake.
 
 .. _Transfer a stake NFT:
