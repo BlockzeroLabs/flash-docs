@@ -112,5 +112,5 @@ Start your Flashback
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To see your Flashback(s) click on STAKE DASHBOARD at the bottom of the box.
-You might have to refresh the page to update the list and see your newly create Flashstake.
+You might have to refresh the page to update the list and see your newly created Flashback.
 :doc:`More on the Dashboard in the next page! </user-interface/flashback-dashboard>`
