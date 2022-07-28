@@ -4,38 +4,82 @@ FAQ
 **Basics**
 ----------
 
-What is the Flash Protocol?
+What is Flashstake?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Flash is a permissionless protocol allowing everyone to stake **$FLASH** and earn instant upfront yield. 
-Because of its permissionless nature, it will exist for as long as Ethereum does. 
+Flashstake is a permissionless protocol that allows anyone to earn instant upfront yield through various underlying
+Flash Strategies.
 
-How is the Flash Protocol useful?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The main benefit for the users is that they are not required to wait in order to get their yield. Instead the yield is in their possession immediately.
-On the other hand, the yield can be redirected to either an externally owned account or a contract. This opens infinite amount of possibilities - from 
-redirecting the instant yield to a friend or family member to a complex smart contract that can do further operations with it.
 
-Is Flash Protocol fully permissionless?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Yes. The Flash Protocol Pools/Applications cannot be censored or whitelisted. 
-Users cannot be censored or whitelisted. 
-The XIO Team does not have the power to halt or edit the smart contracts in any way after they’ve been deployed. 
-The contracts are not upgradeable, and there is no "backdoor" present in the code. 
-Of course, XIO has no control over the contracts of ERC20 tokens placed in the Flash Protocol pools/applications.
-If a centralized token (e.g., USDC) were to blacklist an address or freeze all transfers, that would affect all USDC tokens everywhere, including those in the Flash Protocol.
+How does Flashstake work?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In a nutshell, each time a user stakes, they receive fTokens. These fTokens can be burned to proportionally redeem
+yield in a given Flashstake strategy.
 
-Does Flash Protocol charge any fees at the protocol layer?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The users of the Flash Protocol will not be charged any fees. Instead, a percentage of the upfront yield will be "matched" and sent to a predefined Ethereum wallet. 
-The match ratio can be as low as 0% and as high as 20%. That ratio can be changed via a 3 days time-lock function, so users can be aware if a change in the ratio is about to happen.
+Example:
 
-| **Example:** if the match ratio is 2% and the generated upfront yield is **100 $FLASH**. 
-| **100 $FLASH** will be send to the user and **2 $FLASH** will be generated for the XIO Foundation. The matched yield will be used to support future developments of The Flash Protocol.
+- Strategy A currently has 1,000,000 staked DAI tokens that are increasing the size of the "yield pool" every block
+thanks to the underlying protocol (eg AAVE, Yearn, etc)
 
-Is there a Flash Protocol token?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Yes, there is a token called $FLASH. The Flash Token does not have a fixed supply and the contract address is **0x20398ad62bb2d930646d45a6d4292baa0b860c1f**.
-Users can use the $FLASH token in order to stake and earn instant upfront yield.
+- Strategy A's corresponding fToken total supply is currently 100,000
+
+- Strategy A's yield pool currently has 45,000 DAI tokens
+
+.. note::
+    fTokens are a representation of yield within the Flash Protocol.
+
+Alice stakes 100,000 DAI tokens for 365 days and receives 100,000 fTokens. The total supply of fTokens is now
+200,000 which means Alice owns 50% of the entire fToken supply for Strategy A.
+
+This allows Alice to redeem (and burn) 100,000 fTokens which will result in receiving 50% of the "yield pool" (or 22,500 DAI).
+
+This means Alice staked 100,000 DAI tokens for 365 days, received 100,000 fTokens, redeemed these fTokens immediately
+to get back 22,500 DAI tokens. At the end of Alice's stake, Alice will be able to unstake the original 100,000 DAI tokens.
+
+This means Alice staked and earned instant upfront yield at a rate of 22.5%.
+
+
+What is the “yield pool” and how does it increase?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The “Yield Pool” is a concept within each Flash Strategy and it refers to the total yield available in a given strategy.
+
+The Flash strategies developed on launch will take the Staked tokens from users and deposit these into an underlying
+protocol such as AAVE which results in yield (or interest) being earned over time (block by block). The total amount
+of yield available is referred to as the "yield pool".
+
+.. note::
+    Each Flash strategy has its own "yield pool".
+
+.. important::
+    Staked funds always belong to the Staker and are never used to pay new users. This means there is zero
+    chance of a bank run making the Flashstake Protocol default.
+
+
+Are there benefits to not burning the fToken?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The fTokens represent yield within a given Flash strategy which means if the underlying protocol such as
+AAVE experiences increases in interest rates, this means the rate at which the “yield pool” grows would also increase.
+This would therefore mean when you burn your fTokens, you may receive a higher rate of yield.
+
+For example, if the upfront yield rate of a Flash Strategy increases from 5% to 10% (+100% yield), fTokens of that
+strategy increase in redeemable value by 100%.
+
+.. note::
+    This is not financial advice but rather an explanation on how fTokens work in the Flashstake Protocol.
+
+
+How is the APY/APR determined?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The APY/APR is not determined by the Flashstake Protocol but instead based on the size of the "yield pool" within a
+given strategy. This means the APY/APR is entirely dependent on the "yield pool" for a given strategy.
+
+
+How does the protocol handle staking time?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Flashstake Protocol relies on using block timestamps rather than locking for a number of blocks.
+
+This means when you select a duration to stake for, the funds will become available exactly at the end of that duration.
+
+
 
 **Miscellaneous**
 -----------------
@@ -46,18 +90,24 @@ We cannot provide tax or accounting advice. Tax regulations are specific
 to jurisdiction where you or your company reside. For any legal or tax
 matters we recommend consulting your own attorney.
 
-Are there risks in using Flash Protocol?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Flash Protocol smart contracts have been designed with security as a top
-priority. The core protocol code has been reviewed and audited by
-Solidify (of course, we cannot guarantee that bugs won’t be found in the
-future.)
 
-The Flash Protocol contracts are not upgradeable (though other
-third-party Pool implementations might be), and there aren't any
-backdoors.
+What are the risks of using the Flashstake Protocol?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Flashstake Protocol has been audited by multiple third-party firms as explained within the :doc:`Security </security>` page.
+however this does not guarantee that there are no bugs. The code has been open-sourced and can be reviewed before use.
 
-Remember that the tokens held in any of the Flash Applications are also
-smart contracts - not controlled by Flash and may have their own risks.
-The Flash Protocol does not support non-ERC20-conforming tokens, but
-pools/applications may have been created that use them anyway.
+It is important to note the Flashstake Protocol has been designed as a marketplace which allows any third-party
+developers to create their own Flash Strategies. We advise caution when using such strategies since it is possible
+for a given strategy to have arbitrary logic on how funds are directed.
+
+.. note::
+    You can read more about Flash Strategies :doc:`here </core-concepts/strategies>`.
+
+The Flashstake Protocol will initially be launched with a handful of Flash Strategies. Since these strategies use
+underlying protocols such as AAVE, Yearn, Curve, etc there is the risk of these underlying protocols having bugs.
+We have picked underlying protocols we believe are tried, tested and well known within the decentralised
+finance industry.
+
+There is no risk of the Flashstake Protocol defaulting upon a bank run but it is possible for the underlying
+protocol (eg AAVE) to be subjected to a bank run. We cannot comment on whether the underlying protocol is
+susceptible to this scenario.

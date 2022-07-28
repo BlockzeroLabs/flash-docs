@@ -1,13 +1,15 @@
-Flash Protocol
+Flashstake
 ==============
 
-.. image:: logo.svg
+.. image:: logo.png
     :width: 120px
     :alt: Flash logo
     :align: center
 
 Welcome! The pages that follow contain comprehensive documentation of
-the **Flash Protocol**. If you are new to **Flash**, you might want to
+the **Flashstake Protocol** for beginners and advanced users.
+
+If you are new to **Flashstake**, you might want to
 check out the :doc:`./getting-started/protocol-overview` or the :doc:`./getting-started/faq`
 
 Getting Started
@@ -19,20 +21,16 @@ aspects of the protocol.
 Developer links
 ---------------
 
-The Flash codebase is comprised of an ecosystem of open source
-components.
+The Flashstake protocol consists of two main modules - the Flash Protocol and the Flash Strategies. You can learn more
+by navigating to the appropriate pages from the sidebar.
 
-- `Flash Protocol <https://github.com/XIO-Network/xio-flash-protocol>`_
-- `Flash Receiver <https://github.com/XIO-Network/xio-flashapp-contracts>`_
 
 Contents
 ========
 
-:ref:`Keyword Index <genindex>`, :ref:`Search Page <search>`
-
 .. toctree::
    :maxdepth: 3
-   :caption: Getting started
+   :caption: Getting Started
 
    ./getting-started/protocol-overview.rst
    ./getting-started/faq.rst
@@ -41,26 +39,31 @@ Contents
    :maxdepth: 3
    :caption: Core Concepts
 
-   ./core-concepts/flash-token.rst
-   ./core-concepts/flash-stake.rst
-   ./core-concepts/flash-receiver.rst
+   ./core-concepts/strategies.rst
+   ./core-concepts/ftokens.rst
+   ./core-concepts/flashburn.rst
+   ./core-concepts/flashstake.rst
+   ./core-concepts/flashback.rst
+   ./core-concepts/flashnft.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: User Interface
+
+   ./user-interface/flashstake.rst
+   ./user-interface/flashstake-dashboard.rst
+   ./user-interface/flashstake-advanced-mode.rst
+
+   ./user-interface/flashback.rst
+   ./user-interface/flashback-dashboard.rst
+
+   ./user-interface/flashburn.rst
 
 .. toctree::
    :maxdepth: 3
    :caption: Smart Contracts
 
-   ./smart-contracts/addresses.rst
+   ./smart-contracts/overview.rst
    ./smart-contracts/flash-protocol.rst
-   ./smart-contracts/events.rst
-   ./smart-contracts/gas-costs.rst
-   ./smart-contracts/receiver.rst
-   ./smart-contracts/security.rst
-
-.. toctree::
-   :maxdepth: 3
-   :caption: API
-
-   ./api/getting-started.rst
-   ./api/fetching-data.rst
-   ./api/stake.rst
-   ./api/unstake.rst
+   ./smart-contracts/flash-strategy.rst
+   ./security.rst
