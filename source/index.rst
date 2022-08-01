@@ -67,3 +67,4 @@ Contents
    ./smart-contracts/flash-protocol.rst
    ./smart-contracts/flash-strategy.rst
    ./security.rst
+   ./smart-contracts/licence.rst
