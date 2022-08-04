@@ -22,8 +22,8 @@ Strategy a given fToken corresponds to.
     are minted and more!
 
 Upon staking principal tokens with the :doc:`Flash Protocol </smart-contracts/flash-strategy>`, the protocol asks
-the underlying Strategy for many fTokens to mint. These fTokens are then minted by the Flash Protocol and returned to
-the user. If there is a fToken fee percentage specified in the Flash Protocol, this will be deducted from the total fTokens
+the underlying Strategy how many fTokens to mint. These fTokens are then minted by the Flash Protocol and returned to
+the user. If there is an fToken fee percentage specified in the Flash Protocol, this will be deducted from the total fTokens
 minted with the fee being redirected into the Flash treasury and the remaining fTokens going to the user.
 
 There is a hardcoded maximum of 20% the protocol can take in fees.
