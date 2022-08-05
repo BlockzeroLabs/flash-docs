@@ -20,9 +20,9 @@ Audit
 The Flashstake Protocol has been audited by two third party companies in isolation. No major issues were found
 with the audited code. Medium and Low items have been addressed.
 
-PeckShield: https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-Flashstake-v1.0.pdf
+PeckShield: :download:`pdf <peckshield_flashstake_audit.pdf>` https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-Flashstake-v1.0.pdf
 
-Openkertify / Secure3: xxx
+Openkertify / Secure3: :download:`pdf <secure3_flashstake_audit.pdf>` (TODO: add external url)
 
 Testnet Competition
 ===================
@@ -61,8 +61,3 @@ The Flashstake Protocol has a vast array of unit tests to ensure the protocol be
 is over 95%.
 
 These can be found within the Flash Protocol GitHub: https://github.com/BlockzeroLabs/flashv3-contracts
-
-.. note::
-    The protocol code will be made public before it is deployed on mainnet.
-
-
