@@ -35,4 +35,3 @@ then the strategy needs to ensure conversion back into the principal token to ma
     Strategies are responsible for telling the Flash Protocol how many principal tokens have been deposited and so
     how many should be returned at the end of the stake duration. This allows custom strategies to take a fee
     from the principal if they so wish.
-
