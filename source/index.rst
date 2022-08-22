@@ -33,6 +33,7 @@ Contents
    :caption: Getting Started
 
    ./getting-started/protocol-overview.rst
+   ./getting-started/whitepaper.rst
    ./getting-started/faq.rst
 
 .. toctree::
