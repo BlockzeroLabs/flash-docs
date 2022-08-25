@@ -67,6 +67,11 @@ Contents
    ./smart-contracts/overview.rst
    ./smart-contracts/flash-protocol.rst
    ./smart-contracts/flash-strategy.rst
-   ./smart-contracts/strategy-risks.rst
    ./security.rst
    ./smart-contracts/licence.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Strategies
+
+   ./strategies/usdc-aave.rst
