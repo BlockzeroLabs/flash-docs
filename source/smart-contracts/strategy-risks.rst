@@ -11,13 +11,3 @@ You can read more about overall security and risks of using the Flashstake Proto
 
     Flashstake Strategies can be developed and registered with the Flashstake Protocol by anyone but the Flashstake
     DAO chooses which Strategies are listed on the frontend located at app.flashstake.io
-
-
-AAVEv2
------------
-TODO: To be updated.
-
-
-Strategy Name
------------
-TODO: To be updated.
