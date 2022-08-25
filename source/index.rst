@@ -70,3 +70,9 @@ Contents
    ./smart-contracts/strategy-risks.rst
    ./security.rst
    ./smart-contracts/licence.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Strategies
+
+   ./strategies/usdc-aave.rst
