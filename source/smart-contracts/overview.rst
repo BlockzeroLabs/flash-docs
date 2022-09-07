@@ -3,6 +3,23 @@ Overview
 
 The smart contracts have been deployed on Kovan and Ethereum mainnet.
 
+Subgraphs
+-----------
+Ethereum Mainnet: |location_link_a1|
+
+Avalanche Fuji: |location_link_a2|
+
+Please note the above addresses are subject to change if/when infrastructure changes are required.
+
+.. |location_link_a1| raw:: html
+
+   <a href="https://thegraph.com/hosted-service/subgraph/blockzerolabs/flashstake-subgraph" target="_blank">here</a>
+
+.. |location_link_a2| raw:: html
+
+   <a href="https://thegraph.com/hosted-service/subgraph/blockzerolabs/flashstake-subgraph-fuji" target="_blank">here</a>
+
+
 Addresses
 -----------
 
@@ -22,9 +39,9 @@ Mainnet (Ethereum)
    "DAI", "0x6b175474e89094c44da98b954eedeac495271d0f"
    "fDAI-8998", "0x5028c667d1c9da0a9090f16e1607f60b7717fc6a"
 
-   "Flash AAVE USDC Strategy", "0x15c32F81Df9B00b97B68148B6BdeB72D57f24845"
+   "Flash AAVE USDC Strategy", "0x6e5eD1A5901E81F6bC008023d766454D831B6617"
    "USDC", "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-   "fUSDC-15c3", "0xe221bbf1d5960fc420d451206cf2ee0539398aac"
+   "fUSDC-6e5e", "0x32ea96f6f2985bd38e4dac3bc08156198bc2324d"
 
    "FlashBack", "0xb89494aB70001A2F25372b5E962046908188feEa"
    "FlashBackLMT1", "0x209FCB1B6f437f18Eebe6dfa7936b507Be59b0B7"
@@ -67,8 +84,6 @@ https://faucet.avax.network/
 https://app.aave.com/faucet/
 
 
-
-
 Kovan (Deprecated)
 ^^^^^
 
@@ -83,6 +98,7 @@ Kovan (Deprecated)
    "Flash fToken Factory", "0xa27488Fa0DE391Ff3e0EBa30018472808677B54a"
    "Flash AAVE Strategy", "0xCdd10E070ECA2B076556D60Df103223736744924"
    "FlashBack", "0xAF08b3630205dBd8Df48850d913e4927006563E1"
+
 
 
 
