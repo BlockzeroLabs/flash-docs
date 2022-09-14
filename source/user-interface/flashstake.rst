@@ -30,11 +30,22 @@ You may directly select 25%, 50% or all of the tokens in your wallet with the bo
 The amount must be greater than 0 and lower or equal to your wallet balance.
 
 On the right side is the ticker and logo of the token that will be Flashstaked.
-Which token it is depends on the strategy: for the default strategy, DAI-AAVE, the default token is DAI.
+Which token it is depends on the strategy: for the default strategy, WETH-AAVE, the default token is WETH.
+
+.. tip::
+    By clicking on the token's logo on the right side of the field,
+    you can access the strategy selection modal. :doc:`More on strategy selection here. </user-interface/flashstake-advanced-mode>`
+
+.. image:: /images/flashstake/wethToggle.png
+    :alt: Amount field
+    :align: center
+
+If the selected strategy's stake token is WETH (or the wrapped version of the network's native token if you not on mainnet),
+you have the option to stake ETH instead of WETH. To do this, simply switch the toggle from WETH to ETH.
 
 .. note::
-    **Coming soon**: Users will be able to select a different staked token than the strategy's default,
-    by clicking on the token's logo on the right side of the field.
+    If you choose to stake ETH, before signing your flashstaking transaction, you will have to sign a wrapping transaction,
+    to convert the amount of ETH you wish to stake into WETH. Therefore, you will be making two transactions instead of one.
 
 .. _Select the staking duration:
 
