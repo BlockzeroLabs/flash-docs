@@ -34,6 +34,17 @@ The advanced mode allows you to select any other strategy available on the app.
 If you click the strategy dropdown, a modal opens where you can select any strategy from the list.
 You can use the help of the search bar to look up a specific strategy's name or Ethereum address.
 
+.. image:: /images/flashstake/customStrategy.png
+    :alt: strategies
+    :align: center
+
+By default, the strategies listed here are the ones validated by our team,
+as well as any strategy with which you have at least one ongoing stake.
+However, you can also select any other strategy from the default ones by pasting its contract address in the search bar.
+
+.. warning::
+    Custom strategies most likely haven't been validated or necessarily made by our team. Please use at your own risk.
+
 .. _`Flashstaking your stake`:
 
 Flashstake your stake
