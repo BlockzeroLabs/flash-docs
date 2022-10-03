@@ -7,7 +7,10 @@ Subgraphs
 -----------
 Ethereum Mainnet: |location_link_a1|
 
+Optimism: |location_link_a3|
+
 Avalanche Fuji: |location_link_a2|
+
 
 Please note the above addresses are subject to change if/when infrastructure changes are required.
 
@@ -18,6 +21,10 @@ Please note the above addresses are subject to change if/when infrastructure cha
 .. |location_link_a2| raw:: html
 
    <a href="https://thegraph.com/hosted-service/subgraph/blockzerolabs/flashstake-subgraph-fuji" target="_blank">here</a>
+
+.. |location_link_a3| raw:: html
+
+   <a href="https://thegraph.com/hosted-service/subgraph/blockzerolabs/flashstake-subgraph-optimism" target="_blank">here</a>
 
 
 Addresses
@@ -35,20 +42,12 @@ Mainnet (Ethereum)
    "Flash NFT", "0x3b090839C26fE3b2BdfA2F4CD7F3ab001ccdF73F"
    "Flash fToken Factory", "0x05736a8D6bc208B9E3C9A7E20e7f53674AeA6Ab1"
 
-   "Flash AAVE DAI Strategy", "0x89988FB43890C857205Cee04413EF173c93f55fc"
-   "DAI", "0x6b175474e89094c44da98b954eedeac495271d0f"
-   "fDAI-8998", "0x5028c667d1c9da0a9090f16e1607f60b7717fc6a"
-
-   "Flash AAVE USDC Strategy", "0x6e5eD1A5901E81F6bC008023d766454D831B6617"
-   "USDC", "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-   "fUSDC-6e5e", "0x32ea96f6f2985bd38e4dac3bc08156198bc2324d"
-
    "FlashBack", "0xb89494aB70001A2F25372b5E962046908188feEa"
-   "FlashBackLMT1", "0x209FCB1B6f437f18Eebe6dfa7936b507Be59b0B7"
    "FlashBackLMT2", "0xCb1205AC28693bEda01e0B66e9B4d06231609bFD"
    "FlashBackLMT3", "0x57D551a18aaE2c9dE6977425f1df34dCd5DB4977"
 
-Please note: "FlashBackLMT1" has been deprecated and is no longer in use.
+.. note::
+    Specific Flashstake Strategy contract addresses can be found under "Strategies" in the navigation on the left.
 
 
 Avalanche Fuji (testnet)
@@ -57,7 +56,6 @@ Avalanche Fuji (testnet)
 .. csv-table::
    :header: "Contract", "Address"
    :widths: 10, 30
-
 
    "Flash Token", "0xB1f1F47061A7Be15C69f378CB3f69423bD58F2F8"
    "Flash Protocol", "0xa27488Fa0DE391Ff3e0EBa30018472808677B54a"
@@ -71,18 +69,19 @@ Avalanche Fuji (testnet)
    "FlashBackLMT2", "0xb89494aB70001A2F25372b5E962046908188feEa"
    "FlashBackLMT3", "0x42c56a0ff3d4dd4E0EB74db2e6D3A82B852a53A5"
 
-   "Flash AAVE WBTC Strategy", "0xAf2a3Fc54BB7B97353785cA926922cABfC51f20F"
+   "Flash AAVEv2-v1 WBTC Strategy", "0xAf2a3Fc54BB7B97353785cA926922cABfC51f20F"
    "WBTC", "0x9c1dcacb57ada1e9e2d3a8280b7cfc7eb936186f"
    "fWBTC-Af2a", "0x0b65deb46b7c980d15535bee75372e24c817d758"
 
-   "Flash AAVE WETH Strategy", "0x139c72C0335e2EF1Da4d2153664cBFabeDF86cCa"
+   "Flash AAVEv2-v1 WETH Strategy", "0x139c72C0335e2EF1Da4d2153664cBFabeDF86cCa"
    "WETH", "0xD7B1BB8fAf0B974f253d8d97b99f36BEB4C628a2"
    "WETH-139c", "0x9668f5f55f2712dd2dfa316256609b516292d554"
+
+Please note: There may be additional strategies deployed on testnet. You can find the exhaustive list by querying the subgraph.
 
 You can obtain testnet tokens via:
 https://faucet.avax.network/
 https://app.aave.com/faucet/
-
 
 Kovan (Deprecated)
 ^^^^^
