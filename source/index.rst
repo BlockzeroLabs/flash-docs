@@ -74,4 +74,5 @@ Contents
    :maxdepth: 3
    :caption: Strategies
 
-   ./strategies/usdc-aave.rst
+   ./strategies/aavev2-v1.rst
+   ./strategies/aavev2-v2.rst
