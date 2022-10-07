@@ -1,4 +1,4 @@
-FlashBurn
+Burn fTokens (FlashBurn)
 ===============
 
 

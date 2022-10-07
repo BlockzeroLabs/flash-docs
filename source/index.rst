@@ -40,25 +40,12 @@ Contents
    :maxdepth: 3
    :caption: Core Concepts
 
-   ./core-concepts/strategies.rst
+   ./core-concepts/flashstake.rst
    ./core-concepts/ftokens.rst
    ./core-concepts/flashburn.rst
-   ./core-concepts/flashstake.rst
    ./core-concepts/flashback.rst
    ./core-concepts/flashnft.rst
-
-.. toctree::
-   :maxdepth: 3
-   :caption: User Interface
-
-   ./user-interface/flashstake.rst
-   ./user-interface/flashstake-dashboard.rst
-   ./user-interface/flashstake-advanced-mode.rst
-
-   ./user-interface/flashback.rst
-   ./user-interface/flashback-dashboard.rst
-
-   ./user-interface/flashburn.rst
+   ./core-concepts/strategies.rst
 
 .. toctree::
    :maxdepth: 3

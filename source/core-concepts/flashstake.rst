@@ -1,7 +1,7 @@
-FlashStake
+Flashstake
 ===============
 
-Flashstaking is simply the combined action of staking principal tokens and burning (FlashBurn) the received
+Flashstaking is simply the combined action of staking principal (minting fTokens) tokens and burning (FlashBurn) the received
 fTokens for yield all in one transaction.
 
 The Flashstake protocol exposes a function called flashStake which allows the user to do just this. The user can
