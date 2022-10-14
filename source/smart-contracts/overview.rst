@@ -69,13 +69,17 @@ Avalanche Fuji (testnet)
    "FlashBackLMT2", "0xb89494aB70001A2F25372b5E962046908188feEa"
    "FlashBackLMT3", "0x42c56a0ff3d4dd4E0EB74db2e6D3A82B852a53A5"
 
-   "Flash AAVEv2-v1 WBTC Strategy", "0xAf2a3Fc54BB7B97353785cA926922cABfC51f20F"
+   "Flash AAVEv2-v2 WBTC Strategy", "0x6e5eD1A5901E81F6bC008023d766454D831B6617"
    "WBTC", "0x9c1dcacb57ada1e9e2d3a8280b7cfc7eb936186f"
-   "fWBTC-Af2a", "0x0b65deb46b7c980d15535bee75372e24c817d758"
+   "fWBTC-6e5e", "0x9DdE32B874615c1c70D252Fb652d2049bD4c9001"
 
-   "Flash AAVEv2-v1 WETH Strategy", "0x139c72C0335e2EF1Da4d2153664cBFabeDF86cCa"
+   "Flash AAVEv2-v2 WETH Strategy", "0x17E494c0F0CD21D729caCcD81ECcB436F81C426A"
    "WETH", "0xD7B1BB8fAf0B974f253d8d97b99f36BEB4C628a2"
-   "WETH-139c", "0x9668f5f55f2712dd2dfa316256609b516292d554"
+   "fWETH-17E4", "0x8ec3b55879106328cB5379bbB0DcF226D9cff314"
+
+   "Flash AAVEv2-v2 WAVAX Strategy", "0x313c7b13880cfAE46D158343b5879a1056E7Be5B"
+   "WAVAX", "0xd00ae08403b9bbb9124bb305c09058e32c39a48c"
+   "fWAVAX-313c", "0xCf1E214f2c05Ec822ba4e85EBbcb981B0F853f79"
 
 Please note: There may be additional strategies deployed on testnet. You can find the exhaustive list by querying the subgraph.
 
