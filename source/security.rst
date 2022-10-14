@@ -20,9 +20,9 @@ Audit
 The Flashstake Protocol has been audited by two third party companies in isolation. No major issues were found
 with the audited code. Medium and Low items have been addressed.
 
-PeckShield: :download:`pdf <peckshield_flashstake_audit.pdf>` https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-Flashstake-v1.0.pdf
+PeckShield: :download:`pdf <peckshield_flashstake_audit.pdf>`
 
-Openkertify / Secure3: :download:`pdf <secure3_flashstake_audit.pdf>` (TODO: add external url)
+Openkertify / Secure3: :download:`pdf <secure3_flashstake_audit.pdf>`
 
 Testnet Competition
 ===================
@@ -35,6 +35,23 @@ These testnet runs have allowed us to find and resolve the following Smart Contr
 
 #. FlashNFT's were being burned when early unstaking
 #. Unable to Flashstake and redirect all yield to another address (transaction fail)
+
+Testnet competition articles can be found here: |location_link_security_a1|, |location_link_security_a2| and
+|location_link_security_a3|.
+
+
+.. |location_link_security_a1| raw:: html
+
+   <a href="https://medium.com/flashstake-protocol/flashstake-protocol-testnet-announcement-b394506ebd0f" target="_blank">round 1</a>
+
+.. |location_link_security_a2| raw:: html
+
+   <a href="https://medium.com/flashstake-protocol/flashstake-testnet-tournament-round-2-92edd3180105" target="_blank">round 2</a>
+
+.. |location_link_security_a3| raw:: html
+
+   <a href="https://medium.com/flashstake-protocol/flashstake-testnet-tournament-round-2-762d112c5761" target="_blank">round 3</a>
+
 
 
 Admin Functionality
@@ -50,9 +67,9 @@ You can read more about this on the :doc:`./smart-contracts/flash-protocol` page
     Flash Strategies which work with the Flash Protocol can be developed by anyone and registered with the protocol. It
     is important to ensure you interact with trusted Flash Strategies only.
 
-The Flashstake team have developed two strategies which will be available on launch. These are the AAVE DAI strategy which
-allows staking of DAI and the Convex Strategy which allows the staking of cvxCRV (cvxcrv-f). There are limited admin
-functionalities within these - none which allow movement of user funds.
+The Flashstake team have developed one strategy which will be available on launch. These is the
+:doc:`./strategies/aavev2-v1` which allows staking of DAI, USDC and other tokens from the AAVEv2 market.
+There are limited admin functionalities within these - none which allow movement of user funds.
 
 Unit Tests
 ==========
