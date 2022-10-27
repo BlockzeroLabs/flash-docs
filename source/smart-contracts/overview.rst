@@ -50,6 +50,22 @@ Mainnet (Ethereum)
     Specific Flashstake Strategy contract addresses can be found under "Strategies" in the navigation on the left.
 
 
+Optimistic Ethereum (Optimism)
+^^^^^
+
+.. csv-table::
+   :header: "Contract", "Address"
+   :widths: 10, 30
+
+   "Flash Token", "0x86bEA60374f220dE9769b2fEf2db725bc1cDd335"
+   "Flash Protocol", "0x78b2d65dd1d3d9Fb2972d7Ef467261Ca101EC2B9"
+   "Flash NFT", "0x3b090839C26fE3b2BdfA2F4CD7F3ab001ccdF73F"
+   "Flash fToken Factory", "0x05736a8D6bc208B9E3C9A7E20e7f53674AeA6Ab1"
+
+.. note::
+    Specific Flashstake Strategy contract addresses can be found under "Strategies" in the navigation on the left.
+
+
 Avalanche Fuji (testnet)
 ^^^^^
 

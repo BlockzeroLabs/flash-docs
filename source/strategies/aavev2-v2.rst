@@ -21,8 +21,6 @@ Contract Addresses
 +----------+---------------------------------------------+--------------+---------------------------------------------+
 | Ethereum | 0x543134eC56eE444403461519C1Ec8590C7475897  | fSNX-5431    | 0xb66f4bd1a4f0b594fd5c7c3513b14025d072e31d  |
 +----------+---------------------------------------------+--------------+---------------------------------------------+
-| Ethereum | 0x221b09c2dAbbD87A32CabF38C65EDdf49FC61B78  | fBAL-221b    | 0xe221bBf1D5960FC420D451206cF2ee0539398aAC  |
-+----------+---------------------------------------------+--------------+---------------------------------------------+
 
 Please note: The code for this Strategy can be found via block explorers such as Etherscan/Snowtrace.
 
@@ -30,9 +28,12 @@ Strategy Information
 ------------------------------
 AAVEv2-V2 strategies are the second generation of strategies build on top of the AAVE protocol (AAVE version 2).
 
-This strategy is exactly the same as the AAVEv2-V1 strategy with the exception:
+This strategy is exactly the same as the :doc:`AAVEv2-V1 strategy </strategies/aavev2-v1>` with the exception:
 
 - This strategy allows the Controller to update the UserIncentive address at will. This only impacts the number of User Incentive tokens a user receives moving forward.
+
+Please note this strategy does not allow the Controller to manage deposited funds in any way. The strategy Controller
+cannot withdraw principal tokens or yield tokens (aTokens in this case).
 
 Risks
 ------------------------------

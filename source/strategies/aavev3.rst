@@ -1,4 +1,4 @@
-AAVEv2-V1 Strategies
+AAVEv3 Strategies
 ===============
 You can read more about overall security and risks of using the Flashstake Protocol by heading over to :doc:`Security </security>`.
 
@@ -15,26 +15,19 @@ Contract Addresses
 +----------+---------------------------------------------+--------------+---------------------------------------------+
 | Network  | Contract Address                            | fToken Name  | fToken Address                              |
 +==========+=============================================+==============+=============================================+
-| Ethereum | 0x89988FB43890C857205Cee04413EF173c93f55fc  | fDAI-8998    | 0x5028c667D1C9DA0A9090f16E1607F60B7717FC6a  |
-+----------+---------------------------------------------+--------------+---------------------------------------------+
-| Ethereum | 0x15c32F81Df9B00b97B68148B6BdeB72D57f24845  | fUSDC-15c2   | 0xe221bBf1D5960FC420D451206cF2ee0539398aAC  |
+| Optimism | 0x28b413F9f09fBA829A4C0B43783541373Ee3F6C3  | fsUSD-28b4   | 0x5028c667D1C9DA0A9090f16E1607F60B7717FC6a  |
 +----------+---------------------------------------------+--------------+---------------------------------------------+
 
 Please note: The code for this Strategy can be found via block explorers such as Etherscan/Snowtrace.
 
 Strategy Information
 ------------------------------
-AAVEv2-V1 strategies are the first generation of strategies build on top of the AAVE protocol (AAVE version 2).
+This is the first generation of strategies build on top of the AAVE V3 protocol.
 
-This strategy is built on top of AAVEv2 which as of Oct 2022 has a market size of over 5 billion USD.
+This strategy is built on top of AAVEv3 which as of Oct 2022 has a market size of over 1 billion USD.
 
-This Flashstake strategy accepts tokens from depositors and pays upfront yield in kind.
-
-Users can early unstake their principal deposit at any time if in possession of the required amount of fTokens.
-The full amount of accumulating yield is available for redeeming fTokens or direct flashstaking.
-The deposited stake tokens is redirected to the AAVE-V2 lending pool to generate interest.
-
-This strategy has been tested via testnet competitions which attracted over 10,000 interactions.
+This strategy is very similar to the :doc:`AAVEv2-V1 strategy </strategies/aavev2-v1>` but has been adapted to interact
+with the third version of AAVE protocol (v3). This strategy has been specifically tailored for layer 2 use.
 
 Please note this strategy does not allow the Controller to manage deposited funds in any way. The strategy Controller
 cannot withdraw principal tokens or yield tokens (aTokens in this case).
@@ -47,12 +40,20 @@ Risks
 
 Controller Powers
 ------------------------------
+.. |location_link_aave_ref_code| raw:: html
+
+   <a href="https://docs.aave.com/developers/v/1.0/integrating-aave/referral-program" target="_blank">refCode</a>
 
 This Strategy implements Ownable and is controlled by the Flashstake DAO. There are limited powers available over
 this contract as explained below:
 
 - Ability to withdraw any ERC20 token that is not the AAVE interest bearing token. This is to ensure users can be refunded if ERC20 tokens are accidentally sent to this address. Please note, principal tokens cannot be withdrawn by the Controller.
-- Ability to claim AAVE rewards from the AAVE rewards pool. These rewards will be deposited directly into the contract.
+- Ability to claim AAVE rewards from the AAVE rewards pool. These rewards will be deposited directly to the configured address
+- Ability to update the UserIncentive address at will. This only impacts the number of User Incentive tokens a user receives moving forward.
+- Ability to set the maximum staking duration (only impacts new stakes)
+- Ability to permanently lock the maximum staking duration (only impacts new stakes)
+- Ability to permanently lock the user incentive address (only impacts new stakes)
+- Ability to set the AAVE |location_link_aave_ref_code| and address where AAVE incentive rewards are redirected to (only impacts new stakes)
 
 "Flashstake DAO" consists of a multisig located at the following addresses:
 

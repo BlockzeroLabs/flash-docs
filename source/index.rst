@@ -2,7 +2,7 @@ Flashstake
 ==============
 
 .. image:: logo.png
-    :width: 120px
+    :width: 540px
     :alt: Flash logo
     :align: center
 
@@ -63,3 +63,5 @@ Contents
 
    ./strategies/aavev2-v1.rst
    ./strategies/aavev2-v2.rst
+   ./strategies/aavev2-v3.rst
+   ./strategies/aavev3.rst
