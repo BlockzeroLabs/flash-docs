@@ -2,12 +2,12 @@ Frontend Changelog
 ====================
 
 .. raw:: html
-   <!-- {"latest": "2022.11.15 (NAMESTAKE Upgrade)"} -->
+   <!-- {"latest": "FLC-2211.17 (NAMESTAKE Upgrade)"} -->
 
 .. raw:: html
    <!-- changelog split marker -->
 
-FLIP-2211.17 (NAMESTAKE Upgrade)
+FLC-2211.17 (NAMESTAKE Upgrade)
 ----------------------------------
 
 **Upgrades**
