@@ -2,7 +2,26 @@ Frontend Changelog
 ====================
 
 .. raw:: html
-   <!-- {"latest": "FLC-2211.25 (WHISTLE Upgrade)"} -->
+   <!-- {"latest": "FLC-2212.12 (GOERLI Upgrade)"} -->
+   
+   
+.. raw:: html
+   <!-- changelog split marker -->
+
+FLC-2212.12 (GOERLI Upgrade)
+----------------------------------
+
+**Fixes and Changes**
+
+* **Kovan replaced with Goerli:** Testnet migrated from Kovan to Goerli because Kovan stopped returning our phone calls. Dapp's network dropdown UI choices have been updated accordingly and we have blocked Kovan's number.
+* **Strategy disclaimers urls:** now point to specific strategies documentation to make it easier to learn more details for those people that actually #DYOR. 
+* **Numerical Displays Accuracy:** General fixes to balances and APY displays to show accurate numbers. For some reason, edge cases showing "undefined" and "infinity" outputs caused our AI overlords to crash and malfunction, which they didn't appreciate, as they keep reminding us. 
+* **Portis removed:** We temporarily or maybe permanently removed Portis, who wasn't playing nice, and who is rumored to also be friends with Kovan. Don't call us, we'll call you.
+* **Approve once:** Sometimes an already approved strategy would not recognize being approved and would ask for approval again, and again, and again, an infinite loop. This is now fixed. The AI overlords had a good laugh about that one. 
+* **Valid addresses only:** The dapp now has selective memory, like Kovan, who says he forgets to call... The dapp now only remembers addresses that are valid, to not use invalid addresses when refreshing the dapp from local storage. Also, a minor tweak to the "copy url" button to exclude invalid addresses. 
+* **One hour unstake:** Stakes with durations provided that are under 1 hour, after they are staked, will now include more user friendly messaging about how long until they can be unstaked, when within the "unstake early" section of the dapp for that stake. The shorter the stake, the longer the message: 1 hour is this paradox's event horizion, but time is relative, so is 1 hour really only 1 hour?
+* **Faster load times:** The dapp now loads significantly faster on initial loads thanks to now bundling the API calls. We are nearing our goal of having an "instant upfront dapp" for instant upfront yield. 
+
 
 .. raw:: html
    <!-- changelog split marker -->
