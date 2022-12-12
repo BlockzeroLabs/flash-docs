@@ -20,7 +20,8 @@ FLC-2212.12 (GOERLI Upgrade)
 * **Approve once:** Sometimes an already approved strategy would not recognize being approved and would ask for approval again, and again, and again, an infinite loop. This is now fixed. The AI overlords had a good laugh about that one. 
 * **Valid addresses only:** The dapp now has selective memory, like Kovan, who says he forgets to call... The dapp now only remembers addresses that are valid, to not use invalid addresses when refreshing the dapp from local storage. Also, a minor tweak to the "copy url" button to exclude invalid addresses. 
 * **One hour unstake:** Stakes with durations provided that are under 1 hour, after they are staked, will now include more user friendly messaging about how long until they can be unstaked, when within the "unstake early" section of the dapp for that stake. The shorter the stake, the longer the message: 1 hour is this paradox's event horizion, but time is relative, so is 1 hour really only 1 hour?
-* **Faster load times:** The dapp now loads significantly faster on initial loads thanks to now bundling the API calls. We are nearing our goal of having an "instant upfront dapp" for instant upfront yield. 
+* **Faster load times:** The dapp now loads significantly faster on initial loads thanks to now bundling the API calls. Changing wallets while not changing networks will no longer result in a full reload of strategies. We are nearing our goal of having an "instant upfront dapp" for instant upfront yield. 
+* **Duration Input:** The value preview for this input was previously "0.0" and is now just "0", since it has never allowed decimals as an input and only accepts whole numbers. They will build statues in our honor one day for the attention to detail we put into making the Flashstake dapp so damn good. 
 
 
 .. raw:: html
