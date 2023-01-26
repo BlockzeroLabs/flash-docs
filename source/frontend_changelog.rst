@@ -20,8 +20,6 @@ FLC-2301.26 (BOOTSTRAP Upgrade)
 
 **Fixes and Changes**
 
-* **Slippage values:** Values minimum and maximum now enforced to be between 0% and 50%, to protect some users from themselves from using much higher previously possible values.
-
 * **Letter discrimination:**  Typing the letter "E" was forbidden when attempting to input where to transfer the NFT of an existing stake to. Now all letters are possible! The future is now! Coincidentally, the "E" key had been broken on the developer's keyboard the last few weeks, which explains his sudden fascination of leetspeak and sending us cryptic messages like "I n33d a n3w k3yboard". 
 * **FLIDO:** A Flido skin is prepped and ready to go for the upcoming launch of the Flido dapp for stETH upfront yield. 
 * **Unofficial Strategy Recognition:** Preloaded unofficial strategies dropdown UI choices are no longer misbehaving and will no longer cause broken Flashstake UX flow when clicking on them. Previously, when the dapp loaded, it attempted to suggest strategies you've previously interacted with on chain. If any of those strategies were not in the official list, the dapp would misbehave and make it impossible to complete a Flashstake using the provided UI. The workaround had been to paste in the strategy address to force the dapp into submission to reload the strategy freshly so it would do as it was told. Sometimes you're the hammer and sometimes you're the nail.
