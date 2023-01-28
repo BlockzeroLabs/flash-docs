@@ -2,7 +2,7 @@ fToken Accumulator
 ==================
 
 .. important::
-    fToken accumulator interaction user guide :download:`pdf <ftokenaccumulatorv1.pdf>`
+    fToken accumulator interaction user guide :download:`pdf </ftokenaccumulatorv1.pdf>`
 
     This user guide will be updated frequently, ensure you visit this page for the latest version.
 
