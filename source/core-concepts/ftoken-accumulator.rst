@@ -2,7 +2,7 @@ fToken Accumulator
 ==================
 
 .. important::
-    fToken accumulator interaction user guide :download:`pdf </ftokenaccumulatorv1.pdf>`
+    fToken accumulator interaction user guide :download:`pdf </ftokenaccumulatorv2.pdf>`
 
     This user guide will be updated frequently, ensure you visit this page for the latest version.
 
@@ -23,13 +23,13 @@ The fToken Accumulator allows for the arbitrage of these fTokens in exchange for
 carried out by arbitragers, who may accumulate a specific fToken within the fToken Accumulator in exchange for a fixed
 amount of Flash tokens.
 
-The fixed amount of Flash tokens is currently set to 1,000 but can be updated by the Flashstake DAO multisig.
+The fixed amount of Flash tokens is currently set to 20,000 but can be updated by the Flashstake DAO multisig.
 
 For example, if Bob Flashstakes and 5,000 fTokens are minted, with a protocol fee of 1%, 50 fTokens would be taken as
 a fee and directed towards the fToken Accumulator.
 
 If Alice, an arbitrager, knows that 50 fTokens can be exchanged for 10,000 USDC if they are burned and redeemed
-against the yield pool, and 1,000 Flash tokens are currently worth 950 USDC, she might buy 1,000 Flash tokens in
+against the yield pool, and 20,000 Flash tokens are currently worth 950 USDC, she might buy 1,000 Flash tokens in
 order to get the 50 fTokens and make a profit by accumulating them from the fToken Accumulator.
 
 .. note::
