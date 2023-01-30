@@ -3,6 +3,9 @@ Flash Protocol
 
 The Flash Protocol smart contract allows users to Stake principal tokens into a specified strategy.
 
+The associated code for this smart contract can be found at 0x78b2d65dd1d3d9Fb2972d7Ef467261Ca101EC2B9 (ethereum
+mainnet).
+
 
 Methods
 --------

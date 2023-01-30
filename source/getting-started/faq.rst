@@ -56,16 +56,17 @@ of yield available is referred to as the "yield pool".
 
 Are there benefits to not burning the fToken?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The fTokens represent yield within a given Flash strategy which means if the underlying protocol such as
-AAVE experiences increases in interest rates, this means the rate at which the “yield pool” grows would also increase.
-This would therefore mean when you burn your fTokens, you may receive a higher rate of yield.
+The fTokens within a Flash strategy represent ownership over the yield pool, which is directly tied to the performance
+of the underlying protocol, such as AAVE. If interest rates on the underlying protocol increase, the growth rate of
+the "yield pool" will also increase. This means that when fTokens are burned, the yield rate received will also increase.
 
-For example, if the upfront yield rate of a Flash Strategy increases from 5% to 10% (+100% yield), fTokens of that
-strategy increase in redeemable value by 100%.
+If the underlying protocol interest rate jumps from 5% to 10%, this means that all the TVL in a given Flashstake
+strategy will now earn double the interest over time. As a result, the yield pool will grow at twice the speed. Despite
+this, fToken holders will still have the same percentage ownership of the yield pool, effectively doubling the
+value of their fTokens.
 
-.. note::
-    This is not financial advice but rather an explanation on how fTokens work in the Flashstake Protocol.
-
+.. important::
+    The upfront yield rate can fluctuate up or down over time.
 
 How is the APY/APR determined?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

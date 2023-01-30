@@ -1,20 +1,25 @@
 FlashNFT
 ===============
 
-The Flashstake Protocol has been designed from the ground up to be sustainable and to ensure it can be used as a lego
-block within the decentralised finance industry. There have been various decisions made to ensure third party protocols
-can interact with the Flashstake Protocol on-chain. One of these decisions is the introduction of the FlashNFT.
++------------+---------------------------------------------+
+| Network    | Multisig Address                            |
++============+=============================================+
+| Ethereum   | 0x3b090839C26fE3b2BdfA2F4CD7F3ab001ccdF73F  |
++------------+---------------------------------------------+
+| Optimism   | 0x3b090839C26fE3b2BdfA2F4CD7F3ab001ccdF73F  |
++------------+---------------------------------------------+
+
+The Flashstake Protocol has been engineered to be durable and suitable for integration as a building block within
+the decentralized finance sector. Several measures have been implemented to enable third-party protocols to interact
+with the Flashstake Protocol on-chain. One such measure is the implementation of the FlashNFT.
 
 .. important::
     FlashNFT's represent Stakes within the Flash Protocol.
 
-Users can choose to mint an NFT to represent their Stake during the staking process or some time after the Stake has
-been created.
+Users have the choice to mint a non-fungible token (NFT) to represent their stake during the staking process or at a
+later date. The FlashNFT can be transferred to another address which subsequently transfers the ownership of the stake.
 
-The ownership of the Stake is handed over to the NFT which means the NFT owner now owns the
-associated Stake within the Flashstake Protocol. The Stake cannot be interacted with without the associated NFT.
+Once an NFT has been minted, the stake cannot be accesses or modified in any way without the associated NFT.
 
-
-.. note::
-    Developer Note: It is possible to use the NFT token id to determine all the information for the associated Stake
-    within the Flashstake protocol.
+For developers, it is possible to utilize the NFT token id to retrieve all the information pertaining to the
+corresponding stake within the Flashstake Protocol.

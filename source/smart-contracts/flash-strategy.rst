@@ -1,8 +1,11 @@
 Flash Strategy
 ===============
+In accordance with the Flashstake Protocol, all strategies utilized must adhere to the Flash Strategy interface
+as defined.
 
-Any strategy registered and used by the Flashstake Protocol must match the Flash Strategy interface, described here.
-
+Strategies can be created, deployed, and registered by any individual or entity, resulting in varying
+code sources. The source code for strategies developed by the Flashstake DAO can be accessed by navigating to the
+corresponding strategy on the sidebar.
 
 Methods
 --------

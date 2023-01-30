@@ -46,6 +46,7 @@ Contents
    ./core-concepts/flashback.rst
    ./core-concepts/flashnft.rst
    ./core-concepts/strategies.rst
+   ./core-concepts/ftoken-accumulator.rst
 
 .. toctree::
    :maxdepth: 3
@@ -54,6 +55,7 @@ Contents
    ./smart-contracts/overview.rst
    ./smart-contracts/flash-protocol.rst
    ./smart-contracts/flash-strategy.rst
+   ./smart-contracts/flash-protocol-proxy.rst
    ./security.rst
    ./smart-contracts/licence.rst
 
@@ -65,6 +67,7 @@ Contents
    ./strategies/aavev2-v2.rst
    ./strategies/aavev2-v3.rst
    ./strategies/aavev3.rst
+   ./strategies/lido.rst
 
 .. toctree::
    :maxdepth: 3
