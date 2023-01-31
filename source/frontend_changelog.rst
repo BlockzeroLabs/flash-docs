@@ -31,8 +31,6 @@ FLC-2301.26 (BOOTSTRAP Upgrade)
 * **Miscellaneous Crap:** Lots of little things got tweaked and fixed like showing appropriate USD value for all stake scenarios, LP conditions fixed, more efficient loading, more accurate info being pulled, greasing the wheels, and reticulating the splines, but we need to wrap this up. Less talking, more doing, that's the power of the Home Depot.
 
 
-
-
 .. raw:: html
    <!-- changelog split marker -->
    
