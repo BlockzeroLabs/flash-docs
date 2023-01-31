@@ -28,7 +28,7 @@ FLC-2301.26 (BOOTSTRAP Upgrade)
 * **Dancing Dapp:** Logos and scrollbars would wiggle upon clicking certain dropdown objects within modal popups. 
 * **Faster Fetches:** Improved response time of fetching stakes data, with more elegant optimized code refactoring, because our developers are awesome and can do anything, even wh3n th31r k3yb0ard br3aks.
 * **Limited Permission:** The duration that "With Permit" permission will last for any given token and spender has been set to 24 hours. Because just like love, permission is fleeting. Especially from the AI overlords wife who wants you out by tomorrow before he comes home from his business trip.
-* **Miscellaneous Crap:** Lots of little things got tweaked and fixed like showing appropriate USD value for all stake scenarios, LP conditions fixed, more efficient loading, more accurate info being pulled, greasing the wheels, and reticulating the splines, but we need to wrap this up. Less talking, more doing, Home Depot.
+* **Miscellaneous Crap:** Lots of little things got tweaked and fixed like showing appropriate USD value for all stake scenarios, LP conditions fixed, more efficient loading, more accurate info being pulled, greasing the wheels, and reticulating the splines, but we need to wrap this up. Less talking, more doing, that's the power of the Home Depot.
 
 
 
