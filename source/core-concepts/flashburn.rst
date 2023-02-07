@@ -1,4 +1,4 @@
-Redeem fTokens (FlashBurn)
+Redeeming fTokens (FlashBurn)
 ===============
 
 Upon obtaining fTokens through the process of :doc:`Staking </core-concepts/ftokens>`, users have the option to

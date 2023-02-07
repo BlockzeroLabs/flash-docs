@@ -6,8 +6,10 @@ fToken Accumulator
 
     This user guide will be updated frequently, ensure you visit this page for the latest version.
 
+    This user guide may be outdated. For the latest information join our discord.
+
 +------------+---------------------------------------------+
-| Network    | Multisig Address                            |
+| Network    | Contract Address                            |
 +============+=============================================+
 | Ethereum   | 0x142fd6279E0F3ab28801267497C47116bE1F46FC  |
 +------------+---------------------------------------------+

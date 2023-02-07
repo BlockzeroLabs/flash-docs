@@ -1,29 +1,50 @@
 Protocol Overview
 ===================
 
-
-The Flashstake protocol is a novel financial infrastructure which allows users to receive yield on deposited assets
-instantly with a fixed rate over a set duration. The protocol utilises Flash Strategies which utilise underlying
-protocols such as AAVE, Yearn, etc to generate yield. The sequence diagram below gives a high level overview of
-how this process works with the core concepts explained below.
-
 .. image:: ../protocol-overview-sequence.png
     :alt: Protocol Overview (Sequence)
     :align: center
 
+The Flashstake Protocol is a cutting-edge financial platform that allows users to effortlessly earn a fixed return
+on their deposited assets **instantly and up-front**. By utilizing Flash Strategies that integrate with renowned protocols like
+AAVE, Lido and Yearn, the protocol enables a dynamic marketplace of time that caters to the needs of different users,
+whether they prioritize immediate yield or are willing to wait for higher returns.
 
-Upon staking into the Flashstake protocol, the staked tokens are immediately sent to the Flash Strategy at which point
-they are redirected into the underlying protocol (eg AAVE, Yearn) to start earning yield. The Flash Protocol and Flash Strategy determine
-the number of fTokens that should be minted and sent to the staker, this number is a function of staked token quantity and duration. The
-resulting fTokens entitle the holder to redeem yield proportionate to their ownership from the Flash Strategy.
-This means if the yield pool currently contains 1000 USD and the staker holds 100% of fTokens for that strategy, the
-user can burn these fTokens to redeem for the 1000 USD.
+To participate in the Flashstake process, users first choose a Flashstake Strategy and then proceed to Flashstake
+by sending their principal tokens to the Flashstake Protocol. The Flashstake Protocol then transfers these tokens
+to the selected Flashstake strategy, which redirects the tokens to an underlying protocol, such as AAVE, Lido, or
+Yearn, where they begin to earn yield typically block by block. This process is referred to as staking,
+as detailed :doc:`here </core-concepts/ftokens>`.
 
-You can read the core concepts linked below to understand how the Flashstake Protocol works in more detail:
+.. note::
+    The principal deposited into the Flashstake Protocol can be represented by a unique, non-fungible
+    token (:doc:`FlashNFT </core-concepts/flashnft>`) that enables the transfer of stake ownership between wallets.
+
+The upfront yield rate (APR) is determined by several factors, including the staked token quantity, stake duration,
+available yield in the related Flashstake Strategy's yield pool, and the availability of more efficient yield
+redemption routes. All available options are evaluated to ensure the Flashstaker receives the highest possible
+APR, as described in the process referred to as FlashBurn, which is detailed :doc:`here </core-concepts/flashburn>`.
+
+.. note::
+    **Flashstakers have the option to unstake early by returning a proportional amount of the instant up-front
+    yield in the form of fTokens.**
+
+    For instance, consider the case of Bob, who Flashstakes 1,000 USDC for 365 days and mints approximately
+    1,000 fUSDC, which he redeems for yield through the most efficient route. If Bob decides
+    to unstake after 3 months, he must return 750 fTokens to withdraw his initial 1,000 USDC, as the
+    number of fTokens required to be returned is directly proportional to the amount of time that has elapsed.
+
+    It's important to note that when redeeming yield through any route, the fTokens will leave Bob's wallet since
+    fTokens are the entitlement to yield.
+
+This is a high-level overview of the Flashstake Protocol and does not cover the detailed intricacies
+involved in the process of :doc:`staking </core-concepts/ftokens>` to mint fTokens or
+:doc:`redeeming </core-concepts/flashburn>` these for yield.
+
+For a comprehensive understanding of the Flashstake Protocol, please refer to the core concepts linked below.
 
 #. :doc:`Flash Strategies </core-concepts/strategies>`
-#. :doc:`FTokens </core-concepts/ftokens>`
-#. :doc:`FlashBurn </core-concepts/flashburn>`
-#. :doc:`FlashStake </core-concepts/flashstake>`
-#. :doc:`FlashBack </core-concepts/flashback>`
+#. :doc:`Minting fTokens </core-concepts/ftokens>`
+#. :doc:`Redeeming fTokens </core-concepts/flashburn>`
+#. :doc:`Flashstake (Mint+Redeem) </core-concepts/flashstake>`
 
