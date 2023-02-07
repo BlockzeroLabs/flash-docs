@@ -36,7 +36,7 @@ See :doc:`Protocol Overview </getting-started/protocol-overview>`.
 
 What is the “yield pool” and how does it increase?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The "Yield Pool" is the total yield earned by a particular Flash Strategy. When users deposit their tokens
+The "Yield Pool" is the total available yield earned by a particular Flash Strategy. When users deposit their tokens
 into the Flashstake Protocol, they are sent to a specific Flash Strategy which redirects them to an underlying
 protocol, such as AAVE. This results in the earning of yield, or interest, over time, which is accumulated in
 the strategy's "yield pool". It's important to note that each Flash strategy has its own unique yield pool.
@@ -55,7 +55,8 @@ leading to a higher yield rate when fTokens are redeemed.
 For example, if the interest rate of the underlying protocol doubles, the yield pool grows at twice the speed and
 the value of fTokens will increase, while maintaining the same ownership percentage of the yield pool.
 
-This means redeeming fTokens in the future can result in increased yield.
+This means redeeming fTokens in the future can result in increased yield for the redeemer,
+when compared to the possible yield redeemed in the past.
 
 .. important::
     The upfront yield rate can fluctuate up or down over time.
