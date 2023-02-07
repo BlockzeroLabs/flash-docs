@@ -2,12 +2,38 @@ Frontend Changelog
 ====================
 
 .. raw:: html
-   <!-- {"latest": "FLC-2212.12 (GOERLI Upgrade)"} -->
+   <!-- {"latest": "FLC-2301.26 (BOOTSTRAP Upgrade)"} -->
    
    
 .. raw:: html
    <!-- changelog split marker -->
 
+FLC-2301.26 (BOOTSTRAP Upgrade)
+----------------------------------
+
+**Upgrades**
+
+* **Chronos Upgrade:** Significantly improved efficiency of servicing upfront yield at better rates and less slippage. This update now also makes it easier for users to purchase fTokens directly from Uniswap instead of only able to Stake to mint fTokens, if the goal is to acquire fTokens. This update allows the dapp to use a proxy to determine the best place to source yield from for the staker, from either the yield pool or a liquidity pool or both in various amounts that are most optimal for the staker. Users willing to wait, to service users who want yield now, can optionally participate in liquidity pools to earn fees from all swaps and stakes routed to become a swap. This might be the most important upgrade to date, months in the making. It's hard to express how huge this is. (That's what she said.)
+* **Bug Reporting:**  We got back together with the devil we know, the original service provider for bug reporting surprisingly does the best job compared to all other known alternatives, although we are still working out a few edge case kinks such as she doesn't like modal popups getting in her way. Consider this a life lesson that when you find a girl that does that thing you like, keep her, the rest won't measure up.
+* **Proxy Signing With Permit:** Now in the dapp's settings you can toggle on "With Permit" that will enable this new feature. Any EIP-2612 compatible token can now be signed for approval, instead of an approval transaction, to save the user gas fees prior to executing a transaction to use the token for Flashstaking.  For example, WETH is not EIP-2612 compatible but USDC is, so when "With Permit" is turned on, you would still need to do an approval transaction for WETH before staking, but if staking USDC you can sign for free instead.  One day our future selves will look back at the old days and laugh when thinking how everyone used to think it was acceptable to pay gas fees to approve transactions.
+* **Referral Tracking:** Code functionality has been prepared for future possible referral campaigns. Time travel is currently the only known method for creating circular referral logic. Luckily, we are experts in the field of financial time travel and are able to detect such shenanigans.
+
+**Fixes and Changes**
+
+* **Letter discrimination:**  Typing the letter "E" was forbidden when attempting to input where to transfer the NFT of an existing stake to. Now all letters are possible! The future is now! Coincidentally, the "E" key had been broken on the developer's keyboard the last few weeks, which explains his sudden fascination of leetspeak and sending us cryptic messages like "I n33d a n3w k3yboard". 
+* **FLIDO:** A Flido skin is prepped and ready to go for the upcoming launch of the Flido dapp for stETH upfront yield. 
+* **Unofficial Strategy Recognition:** Preloaded unofficial strategies dropdown UI choices are no longer misbehaving and will no longer cause broken Flashstake UX flow when clicking on them. Previously, when the dapp loaded, it attempted to suggest strategies you've previously interacted with on chain. If any of those strategies were not in the official list, the dapp would misbehave and make it impossible to complete a Flashstake using the provided UI. The workaround had been to paste in the strategy address to force the dapp into submission to reload the strategy freshly so it would do as it was told. Sometimes you're the hammer and sometimes you're the nail.
+* **Infinite Load:**  When users were automatically connected upon loading the dapp, they could experience the strategy preload to be loading forever. Question for the day: If humans lived forever, would we care about interest rates?
+* **Undefined Objects:** Custom strategies were causing an identity crisis with logo icons, they did not know who they are so they opted for displaying broken images instead. If a tree wasn't called a "tree", would it still be a tree? Is a rose just as sweet by any other name?
+* **Dancing Dapp:** Logos and scrollbars would wiggle upon clicking certain dropdown objects within modal popups. 
+* **Faster Fetches:** Improved response time of fetching stakes data, with more elegant optimized code refactoring, because our developers are awesome and can do anything, even wh3n th31r k3yb0ard br3aks.
+* **Limited Permission:** The duration that "With Permit" permission will last for any given token and spender has been set to 24 hours. Because just like love, permission is fleeting. Especially from the AI overlords wife who wants you out by tomorrow before he comes home from his business trip.
+* **Miscellaneous Crap:** Lots of little things got tweaked and fixed like showing appropriate USD value for all stake scenarios, LP conditions fixed, more efficient loading, more accurate info being pulled, greasing the wheels, and reticulating the splines, but we need to wrap this up. Less talking, more doing, that's the power of the Home Depot.
+
+
+.. raw:: html
+   <!-- changelog split marker -->
+   
 FLC-2212.12 (GOERLI Upgrade)
 ----------------------------------
 
