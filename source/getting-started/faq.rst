@@ -6,7 +6,7 @@ FAQ
 
 What is Flashstake Protocol?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Flashstake Protocol offers a permissionless solution for individuals to earn instant yield through the
+The Flashstake Protocol offers a permissionless solution for individuals to earn instant upfront yield through the
 utilization of various Flashstake Strategies, which leverage the power of underlying protocols like
 AAVE, Yearn, and Lido.
 
