@@ -4,14 +4,32 @@ FAQ
 **Basics**
 ----------
 
-What is Flashstake?
+What is Flashstake Protocol?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The Flashstake Protocol offers a permissionless solution for individuals to earn instant yield through the
 utilization of various Flashstake Strategies, which leverage the power of underlying protocols like
 AAVE, Yearn, and Lido.
 
 
-How does Flashstake work?
+What is a FlashStake?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Flashstake Protocol provides a feature called :doc:`FlashStake </core-concepts/flashstake>` which enables users to both stake their
+principal tokens to :doc:`mint fTokens </core-concepts/ftokens>` and
+:doc:`redeem the received fTokens for yield </core-concepts/flashburn>` in a single transaction.
+
+A Flashstake provides the simplicity of allowing a user to never interact directly with
+:doc:`fTokens </core-concepts/ftokens>`. The user
+can stake a token of their choosing, for any duration they want, and receive upfront yield,
+while their original staked token now remains locked up for that duration they chose, with no penalty
+for early withdraw.
+
+The Flashstake Protocol makes it easy for users to earn upfront yield without having to directly deal with
+:doc:`fTokens </core-concepts/ftokens>`. The user can stake any token for the desired duration and receive
+immediate rewards, while the original staked principal will be locked for the selected period without any
+consequences for early withdrawal.
+
+
+How does Flashstake Protocol work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 See :doc:`Protocol Overview </getting-started/protocol-overview>`.
 
@@ -44,8 +62,10 @@ This means redeeming fTokens in the future can result in increased yield.
 
 How is the APY/APR determined?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The APY/APR is not determined by the Flashstake Protocol but instead based on the size of the "yield pool" within a
-given strategy. This means the APY/APR is entirely dependent on the "yield pool" for a given strategy.
+The APY/APR is not determined by the Flashstake Protocol but instead based on the available yield of a given strategy:
+
+- When burning fTokens for yield within the "yield pool"
+- When swapping fTokens via a liquidity pool (open market)
 
 See :doc:`Protocol Overview </getting-started/protocol-overview>`.
 
@@ -85,3 +105,14 @@ finance industry.
 There is no risk of the Flashstake Protocol defaulting upon a bank run but it is possible for the underlying
 protocol (eg AAVE) to be subjected to a bank run. We cannot comment on whether the underlying protocol is
 susceptible to this scenario.
+
+What are the risks to a user's staked principal?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This depends on the code of each strategy. The official Flashstake Strategies (as seen on the sidebar)
+deposit 100% of your tokens into underlying protocols such as AAVE and Lido, and grant you full
+control of your tokens when it's time to unstake them. The official strategies do not put your tokens in
+danger of liquidation or use them for lending, payment to other stakers, or any other risk-prone activities.
+
+.. important::
+    Unofficial strategies should be used at your own risk and discretion.
+

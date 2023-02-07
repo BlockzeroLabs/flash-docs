@@ -2,7 +2,7 @@ FlashNFT
 ===============
 
 +------------+---------------------------------------------+
-| Network    | Multisig Address                            |
+| Network    | Contract Address                            |
 +============+=============================================+
 | Ethereum   | 0x3b090839C26fE3b2BdfA2F4CD7F3ab001ccdF73F  |
 +------------+---------------------------------------------+
@@ -18,7 +18,7 @@ later. The NFT can be transferred to another address, which transfers the owners
 
 .. caution::
     Minting a FlashNFT will transfer the ownership of your stake into the NFT. This means if you mint an NFT
-    and send to a address you do not control, you lose ownership of the stake and the associated principal.
+    and send to an address you do not control, you lose ownership of the stake and the associated principal.
 
     Once the NFT has been minted, the stake cannot be withdrawn or modified (unstake early) without the NFT.
 

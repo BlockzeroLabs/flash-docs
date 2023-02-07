@@ -6,12 +6,14 @@ fToken Accumulator
 
     This user guide will be updated frequently, ensure you visit this page for the latest version.
 
+    This user guide may be outdated. For the latest information join our discord.
+
 +------------+---------------------------------------------+
-| Network    | Multisig Address                            |
+| Network    | Contract Address                            |
 +============+=============================================+
-| Ethereum   | 0x850d9DdC2fA136B51C7C86ef331C95e44c54217e  |
+| Ethereum   | 0x142fd6279E0F3ab28801267497C47116bE1F46FC  |
 +------------+---------------------------------------------+
-| Optimism   | 0x15c32F81Df9B00b97B68148B6BdeB72D57f24845  |
+| Optimism   | 0xFD49a007D9fADf8904849edbef1B3344E42142Ff  |
 +------------+---------------------------------------------+
 
 The Flashstake Protocol allows for the collection of a fee in the form of fTokens during the minting process when a
