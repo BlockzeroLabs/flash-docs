@@ -9,7 +9,7 @@ Ethereum Mainnet: |location_link_a1|
 
 Optimism: |location_link_a3|
 
-Avalanche Fuji: |location_link_a2|
+Goerli Fuji (testnet): |location_link_a2|
 
 
 Please note the above addresses are subject to change if/when infrastructure changes are required.
@@ -20,7 +20,7 @@ Please note the above addresses are subject to change if/when infrastructure cha
 
 .. |location_link_a2| raw:: html
 
-   <a href="https://thegraph.com/hosted-service/subgraph/blockzerolabs/flashstake-subgraph-fuji" target="_blank">here</a>
+   <a href="https://thegraph.com/hosted-service/subgraph/blockzerolabs/flashstake-subgraph-goerli" target="_blank">here</a>
 
 .. |location_link_a3| raw:: html
 

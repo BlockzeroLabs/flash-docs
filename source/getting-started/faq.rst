@@ -56,14 +56,14 @@ For example, if the interest rate of the underlying protocol doubles, the yield 
 the value of fTokens will increase, while maintaining the same ownership percentage of the yield pool.
 
 This means redeeming fTokens in the future can result in increased yield for the redeemer,
-when compared to the possible yield redeemed in the past.
+when compared to the possible yield redeemable in the past.
 
 .. important::
     The upfront yield rate can fluctuate up or down over time.
 
 How is the APY/APR determined?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The APY/APR is not determined by the Flashstake Protocol but instead based on the available yield of a given strategy:
+The APY/APR is not determined by the Flashstake Protocol, but instead based on the available yield of a given strategy:
 
 - When burning fTokens for yield within the "yield pool"
 - When swapping fTokens via a liquidity pool (open market)
