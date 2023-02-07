@@ -9,17 +9,20 @@ FlashNFT
 | Optimism   | 0x3b090839C26fE3b2BdfA2F4CD7F3ab001ccdF73F  |
 +------------+---------------------------------------------+
 
-The Flashstake Protocol has been engineered to be durable and suitable for integration as a building block within
-the decentralized finance sector. Several measures have been implemented to enable third-party protocols to interact
-with the Flashstake Protocol on-chain. One such measure is the implementation of the FlashNFT.
+The Flashstake Protocol has been designed to be robust and integratable as a building block in the
+decentralized finance industry. It has several features to enable third-party protocols to interact with it on-chain,
+one of which is the implementation of the FlashNFT.
 
-.. important::
-    FlashNFT's represent Stakes within the Flash Protocol.
+The FlashNFT represents a user's stake in the Flash Protocol and can be minted at the time of staking or
+later. The NFT can be transferred to another address, which transfers the ownership of the stake.
 
-Users have the choice to mint a non-fungible token (NFT) to represent their stake during the staking process or at a
-later date. The FlashNFT can be transferred to another address which subsequently transfers the ownership of the stake.
+.. caution::
+    Minting a FlashNFT will transfer the ownership of your stake into the NFT. This means if you mint an NFT
+    and send to a address you do not control, you lose ownership of the stake and the associated principal.
 
-Once an NFT has been minted, the stake cannot be accesses or modified in any way without the associated NFT.
+    Once the NFT has been minted, the stake cannot be withdrawn or modified (unstake early) without the NFT.
 
-For developers, it is possible to utilize the NFT token id to retrieve all the information pertaining to the
-corresponding stake within the Flashstake Protocol.
+Developers can use the NFT token ID to access all information related to the corresponding
+stake in the Flashstake Protocol.
+
+

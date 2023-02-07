@@ -33,31 +33,25 @@ Contents
    :caption: Getting Started
 
    ./getting-started/protocol-overview.rst
-   ./getting-started/whitepaper.rst
    ./getting-started/faq.rst
+   ./security.rst
 
 .. toctree::
    :maxdepth: 3
    :caption: Core Concepts
 
-   ./core-concepts/flashstake.rst
+   ./core-concepts/strategies.rst
    ./core-concepts/ftokens.rst
    ./core-concepts/flashburn.rst
-   ./core-concepts/flashback.rst
+   ./core-concepts/flashstake.rst
    ./core-concepts/flashnft.rst
-   ./core-concepts/strategies.rst
-   ./core-concepts/ftoken-accumulator.rst
 
 .. toctree::
    :maxdepth: 3
-   :caption: Smart Contracts
+   :caption: Additional Concepts
 
-   ./smart-contracts/overview.rst
-   ./smart-contracts/flash-protocol.rst
-   ./smart-contracts/flash-strategy.rst
-   ./smart-contracts/flash-protocol-proxy.rst
-   ./security.rst
-   ./smart-contracts/licence.rst
+   ./core-concepts/flashback.rst
+   ./core-concepts/ftoken-accumulator.rst
 
 .. toctree::
    :maxdepth: 3
@@ -68,6 +62,16 @@ Contents
    ./strategies/aavev2-v3.rst
    ./strategies/aavev3.rst
    ./strategies/lido.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Smart Contracts
+
+   ./smart-contracts/overview.rst
+   ./smart-contracts/flash-protocol.rst
+   ./smart-contracts/flash-strategy.rst
+   ./smart-contracts/flash-protocol-proxy.rst
+   ./smart-contracts/licence.rst
 
 .. toctree::
    :maxdepth: 3

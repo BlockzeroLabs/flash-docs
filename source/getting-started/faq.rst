@@ -6,64 +6,38 @@ FAQ
 
 What is Flashstake?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Flashstake is a permissionless protocol that allows anyone to earn instant upfront yield through various underlying
-Flash Strategies.
+The Flashstake Protocol offers a permissionless solution for individuals to earn instant yield through the
+utilization of various Flashstake Strategies, which leverage the power of underlying protocols like
+AAVE, Yearn, and Lido.
 
 
 How does Flashstake work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In a nutshell, each time a user stakes, they receive fTokens. These fTokens can be burned to proportionally redeem
-yield in a given Flashstake strategy.
-
-Example:
-
-- Strategy A currently has 1,000,000 staked DAI tokens that are increasing the size of the "yield pool" every block
-thanks to the underlying protocol (eg AAVE, Yearn, etc)
-
-- Strategy A's corresponding fToken total supply is currently 100,000
-
-- Strategy A's yield pool currently has 45,000 DAI tokens
-
-.. note::
-    fTokens are a representation of yield within the Flash Protocol.
-
-Alice stakes 100,000 DAI tokens for 365 days and receives 100,000 fTokens. The total supply of fTokens is now
-200,000 which means Alice owns 50% of the entire fToken supply for Strategy A.
-
-This allows Alice to redeem (and burn) 100,000 fTokens which will result in receiving 50% of the "yield pool" (or 22,500 DAI).
-
-This means Alice staked 100,000 DAI tokens for 365 days, received 100,000 fTokens, redeemed these fTokens immediately
-to get back 22,500 DAI tokens. At the end of Alice's stake, Alice will be able to unstake the original 100,000 DAI tokens.
-
-This means Alice staked and earned instant upfront yield at a rate of 22.5%.
+See :doc:`Protocol Overview </getting-started/protocol-overview>`.
 
 
 What is the “yield pool” and how does it increase?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The “Yield Pool” is a concept within each Flash Strategy and it refers to the total yield available in a given strategy.
-
-The Flash strategies developed on launch will take the Staked tokens from users and deposit these into an underlying
-protocol such as AAVE which results in yield (or interest) being earned over time (block by block). The total amount
-of yield available is referred to as the "yield pool".
+The "Yield Pool" is the total yield earned by a particular Flash Strategy. When users deposit their tokens
+into the Flashstake Protocol, they are sent to a specific Flash Strategy which redirects them to an underlying
+protocol, such as AAVE. This results in the earning of yield, or interest, over time, which is accumulated in
+the strategy's "yield pool". It's important to note that each Flash strategy has its own unique yield pool.
 
 .. note::
-    Each Flash strategy has its own "yield pool".
-
-.. important::
-    Staked funds always belong to the Staker and are never used to pay new users. This means there is zero
-    chance of a bank run making the Flashstake Protocol default.
+    Staked funds always belong to the staker and are never used to pay new users, making the
+    Flashstake Protocol safe from potential bank runs.
 
 
 Are there benefits to not burning the fToken?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The fTokens within a Flash strategy represent ownership over the yield pool, which is directly tied to the performance
-of the underlying protocol, such as AAVE. If interest rates on the underlying protocol increase, the growth rate of
-the "yield pool" will also increase. This means that when fTokens are burned, the yield rate received will also increase.
+The yield pool of a Flash strategy is represented by fTokens, linked to the performance of the underlying protocol
+such as AAVE. If the interest rate of the underlying protocol increases, the yield pool will grow at a faster pace,
+leading to a higher yield rate when fTokens are redeemed.
 
-If the underlying protocol interest rate jumps from 5% to 10%, this means that all the TVL in a given Flashstake
-strategy will now earn double the interest over time. As a result, the yield pool will grow at twice the speed. Despite
-this, fToken holders will still have the same percentage ownership of the yield pool, effectively doubling the
-value of their fTokens.
+For example, if the interest rate of the underlying protocol doubles, the yield pool grows at twice the speed and
+the value of fTokens will increase, while maintaining the same ownership percentage of the yield pool.
+
+This means redeeming fTokens in the future can result in increased yield.
 
 .. important::
     The upfront yield rate can fluctuate up or down over time.
@@ -73,13 +47,12 @@ How is the APY/APR determined?
 The APY/APR is not determined by the Flashstake Protocol but instead based on the size of the "yield pool" within a
 given strategy. This means the APY/APR is entirely dependent on the "yield pool" for a given strategy.
 
+See :doc:`Protocol Overview </getting-started/protocol-overview>`.
 
 How does the protocol handle staking time?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Flashstake Protocol relies on using block timestamps rather than locking for a number of blocks.
-
-This means when you select a duration to stake for, the funds will become available exactly at the end of that duration.
-
+The Flashstake Protocol uses block timestamps instead of locking the funds for a specific number of blocks.
+This means that when you stake for a chosen duration, your funds will become available precisely at the end of that period.
 
 
 **Miscellaneous**
