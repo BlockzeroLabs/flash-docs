@@ -40,6 +40,7 @@ Contents
    :maxdepth: 3
    :caption: Core Concepts
 
+   ./core-concepts/flash-token.rst
    ./core-concepts/strategies.rst
    ./core-concepts/ftokens.rst
    ./core-concepts/flashburn.rst

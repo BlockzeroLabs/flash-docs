@@ -1,24 +1,21 @@
 **Security**
 ----------------
 
-Security and decentralisation have been top of mind from ideation through to delivery.
+Security and decentralization were a top priority throughout the ideation and development process. The
+smart contracts were created with the goal of being as decentralised as possible. This page provides
+information on administrative capabilities, security audits, and other related security information.
 
-The Smart Contracts have been designed to be as permissionless as possible.
-
-This page details the admin functionalities, audits and any other security related information.
-
-.. important::
-    The Flashstake Protocol has achieved over 95% test coverage within internal unit tests.
-
-    The protocol has been audited by PeckShield and Openkertify/Secure3 with no major items found.
-
-    Over 2,000 users tested the protocol on testnet generating over 250,000 individual interactions.
+It's important to note that the Flashstake Protocol has undergone extensive internal testing, resulting in
+over 95% test coverage. The protocol has also been professionally audited by PeckShield and Openkertify/Secure3,
+with no major security issues detected. Additionally, the protocol was thoroughly tested by over 2,000 users
+on the testnet, with over 250,000 interactions conducted.
 
 Audit
 ======
 
-The Flashstake Protocol has been audited by two third party companies in isolation. No major issues were found
-with the audited code. Medium and Low items have been addressed.
+Two third-party companies independently audited the Flashstake Protocol, and no significant problems
+were discovered in the code. Any medium and low-level issues that were identified have since been addressed. You
+can view the associated Audit documents below.
 
 PeckShield: :download:`pdf <peckshield_flashstake_audit.pdf>`
 
@@ -27,14 +24,14 @@ Openkertify / Secure3: :download:`pdf <secure3_flashstake_audit.pdf>`
 Testnet Competition
 ===================
 
-Blockzero Labs have run testnet competitions with their community which allowed the Flashstake Protocol to be
-deployed and tested on Kovan. This allowed the protocol to be tested with over 2,000 participants generating in excess
-of 250,000 individual interactions with the contracts.
+Blockzero Labs conducted testnet competitions with its community, resulting in the deployment and
+testing of the Flashstake Protocol on the Kovan network. Over 2,000 participants were involved,
+generating more than 250,000 individual interactions with the contracts.
 
-These testnet runs have allowed us to find and resolve the following Smart Contract bugs:
+These testnet exercises uncovered and fixed the following smart contract bugs:
 
-#. FlashNFT's were being burned when early unstaking
-#. Unable to Flashstake and redirect all yield to another address (transaction fail)
+#. FlashNFTs were accidentally burned during early unstaking
+#. It was previously not possible to Flashstake and redirect all yield to another address, which resulted in transaction failure.
 
 Testnet competition articles can be found here: |location_link_security_a1|, |location_link_security_a2| and
 |location_link_security_a3|.
@@ -57,24 +54,26 @@ Testnet competition articles can be found here: |location_link_security_a1|, |lo
 Admin Functionality
 ===================
 
-The Flashstake Protocol contract has one admin function named setMintFeeInfo. This function can be used to update the
-percentage fee taken whenever fTokens are minted as well as the address they are sent to. There is a maximum limit of
-20% that has been hardcoded into the contract.
+The Flashstake Protocol contract features a single administrative function named "setMintFeeInfo." This function
+enables the update of the percentage fee taken each time fTokens are minted and the address they are sent to.
+The contract has a hardcoded maximum fee limit of 20%.
 
-You can read more about this on the :doc:`./smart-contracts/flash-protocol` page.
+For more information, visit the :doc:`./smart-contracts/flash-protocol` page.
 
 .. important::
-    Flash Strategies which work with the Flash Protocol can be developed by anyone and registered with the protocol. It
-    is important to ensure you interact with trusted Flash Strategies only.
+    Anyone can develop and register Flash Strategies which work with the Flash Protocol. It's crucial to
+    only interact with trustworthy Flash Strategies.
 
-The Flashstake team have developed one strategy which will be available on launch. These is the
-:doc:`./strategies/aavev2-v1` which allows staking of DAI, USDC and other tokens from the AAVEv2 market.
-There are limited admin functionalities within these - none which allow movement of user funds.
+Information on Flashstake Strategies developed by the Flashstake Core team can be found in the sidebar. The individual
+pages explain how each strategy functions as well as admin controls and risks involved.
 
 Unit Tests
 ==========
 
-The Flashstake Protocol has a vast array of unit tests to ensure the protocol behaves as intended. The total code coverage
-is over 95%.
+The Flashstake Protocol has been thoroughly tested to ensure its correct functioning. The unit tests for
+the protocol have reached a coverage rate of more than 95%. The tests can be accessed on the Flash Protocol
+GitHub repository at https://github.com/BlockzeroLabs/flashv3-contracts.
 
-These can be found within the Flash Protocol GitHub: https://github.com/BlockzeroLabs/flashv3-contracts
+.. important::
+    The information on this page is specific to the Flashstake Protocol and may not apply to
+    all :doc:`Flashstake Strategies </core-concepts/strategies>`.

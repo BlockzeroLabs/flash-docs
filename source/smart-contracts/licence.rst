@@ -14,6 +14,8 @@ https://docs.flashstake.io/smart-contracts/licence.html (this page).
 
 Change License:       GNU General Public License v2.0 or later
 
+Note:                 Specific smart contracts may have their own change date and license. This can be found within the contract source code.
+
 -----------------------------------------------------------------------------
 
 Business Source License 1.1
