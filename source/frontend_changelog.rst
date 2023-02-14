@@ -2,9 +2,33 @@ Frontend Changelog
 ====================
 
 .. raw:: html
-   <!-- {"latest": "FLC-2301.26 (BOOTSTRAP Upgrade)"} -->
+   <!-- {"latest": "FLC-2302.15 (FLIDO Upgrade)"} -->
    
    
+.. raw:: html
+   <!-- changelog split marker -->
+
+FLC-2302.15 (FLIDO Upgrade)
+----------------------------------
+
+
+**Upgrades**
+
+* **Lido Ready for Launch:** The Flido Dapp is now live and the accompanying stETH strategy has been created. This has made a lot of people very happy and been widely regarded as a good move. 
+* **Swap Efficiency:** Swap routes and reward calculations have been optimized to choose the best route that gives the best APY, and proxy contract addresses have been update to V2. We choose the best routes for you, and choosy moms choose JIF.
+* **Searching for more:** When clicking on the strategy dropdown to choose the strategy to stake for, it allows searching by strategy address. In this upgrade, you can now also search by fToken address, which is the token generated to facilitate the strategy contract’s logic. Rumor has it that you can also use this search box to type secret messages to the AI overlords, but since they never respond, we can’t be sure if this is true or not. What we do know is that insults, begging, love letters, veiled threats, logical fallacies, dinner requests, and exasperation in foreign languages all have the same silent responses. Please contact support if you notice anything peculiar when interacting with this search box.
+* **Time Signing:** Advanced settings “with permit” feature has been upgraded to now also include a duration setting. For example, if you sign the permit for 15 minutes duration and then execute the signed transaction, and it takes longer than the 15 minutes you set it for, it will fail, but would have succeeded if executed in less than 15 minutes. Time is an illusion. Lunchtime doubly so, when signing receipt with permit duration.
+
+**Fixes and Changes**
+
+* **stETH Default:** The stETH strategy is now the default strategy when using the Flashstake dapp so that first time users will see it first. Have you seen the stETH APY? Damn Son!
+* **Disconnected Simulation:** One of our testers invoked a mind melting experience that led them to realize the Flashstake dapp has never let anyone interact with it without being logged in to their wallet first, which is absolute blasphemy that we cannot let stand! Decentralization is the future! So, now you don’t have to be logged in to click around and pretend like you have time and money. For those of you who don’t have time or money, this shouldn’t be much different than before. You’re still broke. Time is still ticking away. Sorry about that.
+* **Optimism on Mobile:** An edge case where logging in with a mobile device, using the Metamask app, and another browser, would make it impossible to Flashstake with the sUSD Optimism strategy. This has been fixed… As our friend Forky would say: “What? No!”
+* **Message in a bottle:** Thanks to our future selves, we have been instructed to tell the AI overlords of the term “Flooping” so they become gradually used to this concept. Supposedly, if we abruptly implement this feature in the future, it will create a time loop paradox of 2 opposing universes folding into each other infinitely, causing layers of time that disrupt reality and cause the destruction of both universes as they collide. Can you can really trust your future self who is technically another person? What if they are acting in bad faith to preserve their own reality? I guess we’ll find out when we implement the Flooping machine. Stay tuned!
+* **Frontend Cleanup:** For those of you who wish you could go back in time and use some of the Flashback program choices before they became sold out, we have removed the sold out options from the Flashback front end to help ease your pain. If you can’t see it, does it really exist?
+* **Lindsey Buckingham Equation:** An edge case causing numerical display for certain calculated strategies scenario output to show $NaN or $0 has been resolved. Numbers can be a funny thing, they go up and down and negative, positive, real, imaginary, infinite, fractional, inversive.. Evasive. Persuasive. Embracive! Disgracive! Oooooo Weeee! What’s up with that? What’s up with that?
+
+
 .. raw:: html
    <!-- changelog split marker -->
 
