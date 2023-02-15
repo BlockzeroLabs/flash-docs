@@ -33,8 +33,8 @@ For example, if Bob Flashstakes and 5,000 fTokens are minted, with a protocol fe
 a fee and directed towards the fToken Accumulator.
 
 If Alice, an arbitrager, knows that 50 fTokens can be exchanged for 10,000 USDC if they are burned and redeemed
-against the yield pool, and 100,000 Flash tokens are currently worth 950 USDC, she might buy 100,000 Flash tokens in
-order to get the 50 fTokens and make a profit by accumulating them from the fToken Accumulator.
+against the yield pool, and 100,000 Flash tokens are currently worth 9,500 USDC, she might buy 1,000 Flash tokens in
+order to get the 50 fTokens and make a profit of $500 by accumulating them from the fToken Accumulator.
 
 .. note::
     The protocol has a hardcoded maximum limit of 20% for the protocol fee, and the latest protocol fee can be retrieved
