@@ -1,5 +1,9 @@
 Protocol Overview
 ===================
+.. caution::
+    This documentation is no longer maintained and may contain outdated information.
+
+    Latest and most up to date documentation can be found at https://docs.flashstake.io
 
 .. image:: ../protocol-overview-sequence.png
     :alt: Protocol Overview (Sequence)
