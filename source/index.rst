@@ -1,6 +1,11 @@
 Flashstake
 ==============
 
+.. caution::
+    This documentation is no longer maintained and may contain outdated information.
+
+    Latest and most up to date documentation can be found at https://docs.flashstake.io
+
 .. image:: logo.png
     :width: 540px
     :alt: Flash logo
@@ -62,6 +67,7 @@ Contents
    ./strategies/aavev2-v3.rst
    ./strategies/aavev3.rst
    ./strategies/lido.rst
+   ./strategies/gmx-glp.rst
 
 .. toctree::
    :maxdepth: 3

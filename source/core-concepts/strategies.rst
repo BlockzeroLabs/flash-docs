@@ -18,6 +18,8 @@ This token facilitates the conversion of any type of yield into fixed upfront yi
 
     Flash Strategies are isolated from one another which ensures funds are always isolated.
 
+    Flashstake Strategies developed by the Flashstake Core team can be found in the sidebar.
+
 A typical strategy requires accounting for yield separately from users' principal.
 This accounting separation of yield is referred to as “yield pool”.
 If the yield of the underlying strategy is generated over time (for example through lending out the principal on spot lending markets)
